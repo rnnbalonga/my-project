@@ -16,17 +16,17 @@ def random_color():
     return (r, g, b)
 
 
-# def draw_polygon(num_sides):
-#     angle = 360 / num_sides
+def draw_polygon(num_sides):
+    angle = 360 / num_sides
 
-#     for i in range (num_sides):
-#         jim_turtle.forward(50)
-#         jim_turtle.right(angle)
+    for i in range (num_sides):
+        jim_turtle.forward(50)
+        jim_turtle.right(angle)
         
 
-# for polygon_sides in range (3,11):
-#     draw_polygon(polygon_sides)
-#     jim_turtle.color(pick_color())
+for polygon_sides in range (3,11):
+    draw_polygon(polygon_sides)
+    jim_turtle.color(random_color())
 
 # def random_walk():
 #     jim_turtle.color(random_color())
@@ -41,11 +41,11 @@ def random_color():
 # for i in range (100):
 #     random_walk()
 
-for i in range(72):
-    jim_turtle.color(random_color())
-    jim_turtle.circle(100)
-    heading_start = jim_turtle.heading()
-    move_heading = jim_turtle.setheading(heading_start + 5)
+# for i in range(72):
+#     jim_turtle.color(random_color())
+#     jim_turtle.circle(100)
+#     heading_start = jim_turtle.heading()
+#     move_heading = jim_turtle.setheading(heading_start + 5)
     
 
 
