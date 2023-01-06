@@ -4,7 +4,7 @@ import random
 is_race_on = False
 screen = Screen()
 screen.setup(width=500,height=500)
-user_bet = screen.textinput(title="Place your bet!", prompt="Select your winner: ")
+user_bet = screen.textinput(title="Place your bet!", prompt="Color: red, orange, yellow, green, or blue. Select the one that's right for you: ")
 colors = ["red", "orange", "yellow", "green", "blue"]
 y_axis = [-100, -50, 0, 50, 100]
 turtle_roster = []
