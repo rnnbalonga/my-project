@@ -47,7 +47,7 @@ def main():
         #Check if there are enough ingredients to create a drink.
         can_make_drink = check_ingredients(drink)
 
-        if can_make_drink == True:            
+        if can_make_drink:            
             drink_cost = MENU[drink]['cost']
             amount_paid = get_coins(drink)
 
