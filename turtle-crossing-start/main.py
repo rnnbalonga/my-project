@@ -4,14 +4,32 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
+
+#Set up screen
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
+
+#Set up Player
+player = Player()
+
+#Set up keypress to move the player up and down
+screen.listen()
+
+screen.onkeypress(player.move_up, "Up")
+screen.onkeypress(player.move_down, "Down")
+
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+    
+    if player.ycor() > 240:
+        player.start_pos()
+   
+
+    
 
 #Create Turtle
 #   Starts at the middle of the screen
