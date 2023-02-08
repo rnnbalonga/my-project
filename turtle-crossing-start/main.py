@@ -20,7 +20,13 @@ screen.onkeypress(player.move_up, "Up")
 screen.onkeypress(player.move_down, "Down")
 
 #Set up Cars
-car = CarManager()
+car_pos = [(0,-220), (0,-200), (0,-180), (0,-160), (0,-140), (0,-120), (0,-100), (0,-80), (0,-60), (0,-40), (0,-20), (0,0), (0,20), (0,40), (0,60), (0,80), (0,100), (0,120), (0,140), (0,160), (0,180), (0,200), (0,220)]
+car_list = []
+
+for car_num in range(0,19):
+    car_set = CarManager()
+    car_set.goto(car_pos[car_num])
+    
 
 
 game_is_on = True
