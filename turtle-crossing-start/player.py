@@ -3,7 +3,7 @@ import random
 
 STARTING_POSITION = (0, -240)
 MOVE_DISTANCE = 10
-FINISH_LINE_Y = 280
+FINISH_LINE_Y = 240
 
 class Player(Turtle):
 
@@ -14,8 +14,7 @@ class Player(Turtle):
         self.color("black")
         self.penup()
         self.setheading(90)
-        self.goto(STARTING_POSITION)
-        
+        self.start_pos()
     
     def move_up(self):
         """
@@ -34,6 +33,7 @@ class Player(Turtle):
         """
         This function will make the Player go back to the starting position.
         """
-        self.goto(STARTING_POSITION)
+        if self.ycor == FINISH_LINE_Y:
+            self.goto(STARTING_POSITION)
     
 
