@@ -20,18 +20,7 @@ screen.onkeypress(player.move_up, "Up")
 screen.onkeypress(player.move_down, "Down")
 
 #Set up Cars
-
-#Set up the y-axis position of the 10 cars.
 car = CarManager()
-car.setposition(0,-230)
-
-car_list = []
-for car in range(10):
-    car_list.append(car())
-
-for car_num in car_list[1,9]:
-    car.ycor += 10
-    car.setposition(0,car.ycor)
 
 
 game_is_on = True
