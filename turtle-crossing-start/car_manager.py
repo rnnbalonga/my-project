@@ -11,6 +11,7 @@ class CarManager(Turtle):
         super().__init__()
         self.shape("square")
         self.color(COLORS[random.randrange(0,5)])
+        self.turtlesize(1,3,0)
         self.penup()
         self.setheading(180)
 
