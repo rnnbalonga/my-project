@@ -3,7 +3,7 @@ import random
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 10
+MOVE_INCREMENT = 2
 CAR_END: -310
 
 class CarManager(Turtle):
@@ -32,7 +32,7 @@ class CarManager(Turtle):
         """
         Make the car move along the x-axis with STARTING_MOVE_DISTANCE.
         """
-        self.forward(STARTING_MOVE_DISTANCE)
+        self.forward(self.car_speed)
 
     def increase_speed(self):
         """
