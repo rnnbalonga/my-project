@@ -35,7 +35,7 @@ for car_num in range(0,len(car_list)):
 game_is_on = True
 
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(0.08)
     screen.update()
     
     #Make each car move along the x-axis
@@ -47,12 +47,17 @@ while game_is_on:
             car_list[car_num].go_right()
 
         #Mechanism for when a car hits the player
-        if car_list[car_num].distance(player) < 20:
-            game_is_on = False
+        # if car_list[car_num].distance(player) < 20:
+        #     game_is_on = False
 
     #Make the player go back to the starting point after reaching the top portion of the screen
     if player.ycor() > 240:
         player.start_pos()
+        
+        for car_num in range(0,len(car_list)):
+            car_list[car_num].increase_speed()
+
+
    
 
 screen.exitonclick()
