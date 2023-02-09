@@ -12,6 +12,7 @@ class CarManager(Turtle):
         self.shape("square")
         self.color(COLORS[random.randrange(0,5)])
         self.turtlesize(1,2,0)
+        self.car_speed = STARTING_MOVE_DISTANCE
         self.penup()
         self.setheading(180)
 
@@ -32,3 +33,10 @@ class CarManager(Turtle):
         Make the car move along the x-axis with STARTING_MOVE_DISTANCE.
         """
         self.forward(STARTING_MOVE_DISTANCE)
+
+    def increase_speed(self):
+        """
+        Increase speed of the cars once player moves to the next level.
+        """
+        self.car_speed += MOVE_INCREMENT
+        self.forward(self.car_speed)
