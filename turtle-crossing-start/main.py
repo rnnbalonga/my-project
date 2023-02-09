@@ -19,6 +19,12 @@ screen.listen()
 screen.onkeypress(player.move_up, "Up")
 screen.onkeypress(player.move_down, "Down")
 
+#Set up Cars
+car = CarManager()
+car.start_point()
+
+
+
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
