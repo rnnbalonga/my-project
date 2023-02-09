@@ -28,3 +28,9 @@ class CarManager(Turtle):
         """
         if self.xcor == CAR_END:
             self.goto(RIGHT_HAND_START,random.randrange(-220,230))
+    
+    def move(self):
+        """
+        Make the car move along the x-axis with STARTING_MOVE_DISTANCE.
+        """
+        self.forward(STARTING_MOVE_DISTANCE)
