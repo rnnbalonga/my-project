@@ -15,3 +15,9 @@ class CarManager(Turtle):
         self.penup()
         self.setheading(180)
 
+    def start_point(self):
+        """
+        This function will set the starting point of the car.
+        """
+        self.setposition(0,random.randrange(0,100))
+
