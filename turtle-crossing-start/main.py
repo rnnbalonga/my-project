@@ -47,7 +47,7 @@ while game_is_on:
             car_list[car_num].go_right()
 
         #Mechanism for when a car hits the player
-        if car_list[car_num].distance(player) < 30:
+        if car_list[car_num].distance(player) < 20:
             game_is_on = False
 
     #Make the player go back to the starting point after reaching the top portion of the screen
@@ -55,7 +55,7 @@ while game_is_on:
         player.start_pos()
    
 
-    
+screen.exitonclick()
 
 #Create Turtle
 #   Starts at the middle of the screen
