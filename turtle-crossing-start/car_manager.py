@@ -26,7 +26,7 @@ class CarManager(Turtle):
         """
         This function will make the car who reaches CAR_END go back to RIGHT_HAND_START (or the right side of the screen).
         """
-        if self.xcor == CAR_END:
+        if self.xcor == -310:
             self.goto(RIGHT_HAND_START,random.randrange(-220,230))
     
     def move(self):
