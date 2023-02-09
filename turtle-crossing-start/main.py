@@ -24,13 +24,16 @@ car = CarManager()
 car.start_point()
 
 
+
 game_is_on = True
+
 while game_is_on:
     time.sleep(0.1)
     screen.update()
     
     car.move()
-    if car.xcor() > -310:
+
+    if car.xcor() < -310:
         car.go_right()
 
     if player.ycor() > 240:
