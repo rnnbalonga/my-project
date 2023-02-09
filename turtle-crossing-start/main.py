@@ -20,9 +20,16 @@ screen.onkeypress(player.move_up, "Up")
 screen.onkeypress(player.move_down, "Down")
 
 #Set up Cars
-car = CarManager()
-car.start_point()
+#This is the list of cars
+car_list = []
 
+#Create 30 cars and add them to car_list
+for number in range(1,30):
+    car_list.append(CarManager())
+
+#Set a starting point for each car in car_list
+for car_num in range(0,len(car_list) - 1):
+    car_list[car_num].start_point()
 
 
 game_is_on = True
@@ -31,10 +38,10 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     
-    car.move()
+    # car.move()
 
-    if car.xcor() < -310:
-        car.go_right()
+    # if car.xcor() < -310:
+    #     car.go_right()
 
     if player.ycor() > 240:
         player.start_pos()
