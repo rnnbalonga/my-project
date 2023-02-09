@@ -44,6 +44,9 @@ while game_is_on:
         if car_list[car_num].xcor() < -310:
             car_list[car_num].go_right()
 
+        if car_list[car_num].distance(player) < 30:
+            game_is_on = False
+
     if player.ycor() > 240:
         player.start_pos()
    
