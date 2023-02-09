@@ -19,5 +19,5 @@ class CarManager(Turtle):
         """
         This function will set the starting point of the car.
         """
-        self.setposition(0,random.randrange(-230,230))
+        self.setposition(random.randrange(-300,300),random.randrange(-220,230))
 
