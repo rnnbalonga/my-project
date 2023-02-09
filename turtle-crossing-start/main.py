@@ -28,7 +28,7 @@ for number in range(1,30):
     car_list.append(CarManager())
 
 #Set a starting point for each car in car_list
-for car_num in range(0,len(car_list) - 1):
+for car_num in range(0,len(car_list)):
     car_list[car_num].start_point()
 
 
@@ -38,10 +38,11 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     
-    # car.move()
+    for car_num in range(0,len(car_list)):
+        car_list[car_num].move()
 
-    # if car.xcor() < -310:
-    #     car.go_right()
+        if car_list[car_num].xcor() < -310:
+            car_list[car_num].go_right()
 
     if player.ycor() > 240:
         player.start_pos()
