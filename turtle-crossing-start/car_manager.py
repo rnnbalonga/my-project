@@ -5,7 +5,7 @@ COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
 CAR_END: -310
-RIGHT_HAND_START = 300
+RIGHT_HAND_START = (300,random.randrange(-220,230))
 
 class CarManager(Turtle):
     def __init__(self):
@@ -26,8 +26,7 @@ class CarManager(Turtle):
         """
         This function will make the car who reaches CAR_END go back to RIGHT_HAND_START (or the right side of the screen).
         """
-        if self.xcor == -310:
-            self.goto(RIGHT_HAND_START,random.randrange(-220,230))
+        self.goto(RIGHT_HAND_START)
     
     def move(self):
         """
