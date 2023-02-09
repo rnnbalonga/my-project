@@ -38,15 +38,19 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     
+    #Make each car move along the x-axis
     for car_num in range(0,len(car_list)):
         car_list[car_num].move()
 
+        #Make car spawn again in the right side of the screen after going past the left side.
         if car_list[car_num].xcor() < -310:
             car_list[car_num].go_right()
 
+        #Mechanism for when a car hits the player
         if car_list[car_num].distance(player) < 30:
             game_is_on = False
 
+    #Make the player go back to the starting point after reaching the top portion of the screen
     if player.ycor() > 240:
         player.start_pos()
    
