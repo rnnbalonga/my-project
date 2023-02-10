@@ -40,6 +40,8 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.08)
     screen.update()
+    #Make the scoreboard appear
+    scoreboard.start_level()
     
     #Make each car move along the x-axis
     for car_num in range(0,len(car_list)):
