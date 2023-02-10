@@ -18,8 +18,13 @@ with open("Input\Letters\starting_letter.txt", "r") as letter:
     
         
 for name in name_list:
+    #Strip the names out of '\n' and save it as name_clean
     name_clean = name.strip("\n")
+    #Replace PLACEHOLDER with name_clean
     new_letter = letter_line_list.replace(PLACEHOLDER, f"{name_clean}")
+    #Create a new file for each name_clean and save it as {name_clean}.txt
+    with open(f"Output\ReadyToSend\{name_clean}.txt", "w") as send_letter:
+        send_letter.write(new_letter)
     
 
 
