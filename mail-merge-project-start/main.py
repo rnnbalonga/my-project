@@ -1,3 +1,5 @@
+PLACEHOLDER = "[name]"
+
 #Open the invited_names text file
 with open(r"Input\Names\invited_names.txt") as names:
 
@@ -13,7 +15,7 @@ with open("Input\Letters\starting_letter.txt", "r") as letter:
     #Create a list of the lines in text
     letter_line_list = letter.readlines()
 
-    print(letter_line_list[0])
+    letter_line_list[0].replace()
         
 
 
