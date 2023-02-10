@@ -18,7 +18,8 @@ with open("Input\Letters\starting_letter.txt", "r") as letter:
     
         
 for name in name_list:
-    new_letter = letter_line_list[0].replace(PLACEHOLDER, f"{name}")
+    name_clean = name.strip("\n")
+    new_letter = letter_line_list[0].replace(PLACEHOLDER, f"{name_clean}")
     print(new_letter)
 
 
