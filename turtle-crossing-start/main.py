@@ -58,6 +58,8 @@ while game_is_on:
     #Make the player go back to the starting point after reaching the top portion of the screen
     if player.ycor() > 240:
         player.start_pos()
+        scoreboard.clear()
+        scoreboard.update_level()
         
         for car_num in range(0,len(car_list)):
             car_list[car_num].increase_speed()
