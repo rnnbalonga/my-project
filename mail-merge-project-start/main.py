@@ -13,14 +13,14 @@ with open(r"Input\Names\invited_names.txt") as names:
 #Use starting_letter.txt
 with open("Input\Letters\starting_letter.txt", "r") as letter:
     #Create a list of the lines in text
-    letter_line_list = letter.readlines()
+    letter_line_list = letter.read()
 
     
         
 for name in name_list:
     name_clean = name.strip("\n")
     new_letter = letter_line_list.replace(PLACEHOLDER, f"{name_clean}")
-    print(new_letter)
+    
 
 
 
