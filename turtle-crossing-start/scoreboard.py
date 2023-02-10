@@ -26,3 +26,10 @@ class Scoreboard(Turtle):
         """
         self.level += 1
         self.start_level()
+    
+    def game_over(self):
+        """
+        Make the scoreboard appear in the center and then write the game over text.
+        """
+        self.goto(-20,0)
+        self.write(f"GAME OVER.\nYour score is: {self.level}",align = "center",font= FONT)
