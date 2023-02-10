@@ -13,6 +13,9 @@ screen.tracer(0)
 #Set up Player
 player = Player()
 
+#Set up Scoreboard
+scoreboard = Scoreboard()
+
 #Set up keypress to move the player up and down
 screen.listen()
 
