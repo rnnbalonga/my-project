@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-FONT = ("Courier", 24, "normal")
+FONT = ("Courier", 16, "normal")
 
 class Scoreboard(Turtle):
     def __init__(self):
@@ -10,7 +10,7 @@ class Scoreboard(Turtle):
         self.color("black")
         self.penup()
         #Set spawn point
-        self.goto(-270,270)
+        self.goto(-270,260)
         self.hideturtle()
         self.level = 0
 
@@ -18,4 +18,4 @@ class Scoreboard(Turtle):
         """
         This function will write the player level in the screen.
         """
-        self.write(f"Current level: {self.level}")
+        self.write(f"Current level: {self.level}",font= FONT)
