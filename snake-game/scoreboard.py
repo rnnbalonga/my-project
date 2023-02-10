@@ -8,7 +8,7 @@ class Scoreboard(Turtle):
         #initialize superclass
         super().__init__()
         self.score = 0
-        with open("high_score.txt", "w") as data:
+        with open("high_score.txt") as data:
             self.high_score = int(data.read())
         self.color("white")
         self.penup()
