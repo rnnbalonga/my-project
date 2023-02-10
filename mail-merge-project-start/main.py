@@ -15,9 +15,11 @@ with open("Input\Letters\starting_letter.txt", "r") as letter:
     #Create a list of the lines in text
     letter_line_list = letter.readlines()
 
-    letter_line_list[0].replace()
+    
         
-
+for name in name_list:
+    new_letter = letter_line_list[0].replace(PLACEHOLDER, f"{name}")
+    print(new_letter)
 
 
 
