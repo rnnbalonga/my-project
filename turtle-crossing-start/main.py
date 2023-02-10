@@ -54,6 +54,8 @@ while game_is_on:
         #Mechanism for when a car hits the player
         if car_list[car_num].distance(player) < 20:
             game_is_on = False
+            scoreboard.clear()
+            scoreboard.game_over()
 
     #Make the player go back to the starting point after reaching the top portion of the screen
     if player.ycor() > 240:
