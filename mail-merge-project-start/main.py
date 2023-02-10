@@ -15,15 +15,12 @@ with open("Input\Letters\starting_letter.txt", "r") as letter:
     #Create a list of the lines in text
     letter_line_list = letter.readlines()
 
-    #Create a new letter for each name in the list as a separate txt file
-    for name in name_list:
-        #Strip the names clean
-        name_clean = name.strip("\n")
-        #Replace PLACEHOLDER with name_clen
-        new_letter = letter_line_list[0].replace(PLACEHOLDER, f"{name_clean}")
+    
         
-        with open(f"Output\ReadyToSend\{name_clean}.txt", "w") as send_letter:
-            send_letter.write(new_letter)
+for name in name_list:
+    name_clean = name.strip("\n")
+    new_letter = letter_line_list[0].replace(PLACEHOLDER, f"{name_clean}")
+    print(new_letter)
 
 
 
