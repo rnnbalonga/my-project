@@ -47,3 +47,12 @@ temp_mean = data["temp"].mean()
 # print(monday_temp)
 
 #Create dataframe from scratch
+student_dict = {
+    "students" : ["Mia", "Ming", "Chikorita"],
+    "scores" : [100, 95, 90]
+}
+
+student = pandas.DataFrame(student_dict)
+
+#Convert created dataframe to csv
+student.to_csv("student.csv")
