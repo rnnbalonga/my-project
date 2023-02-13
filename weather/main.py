@@ -42,5 +42,8 @@ temp_mean = data["temp"].mean()
 
 #Get temperature of Monday and convert it to farenheight
 
-monday = data[data.day == "Monday"]
-monday_temp = ((monday.temp) * 1.8) + 32
+# monday = data[data.day == "Monday"]
+# monday_temp = ((monday.temp) * 1.8) + 32
+# print(monday_temp)
+
+#Create dataframe from scratch
