@@ -29,4 +29,7 @@ temp_list = data["temp"].to_list()
 
 #Get mean of series 'temp' using pandas
 temp_mean = data["temp"].mean()
-print(temp_mean)
+# print(temp_mean)
+
+#Get max of 'temp' using pandas
+print(data["temp"].max())
