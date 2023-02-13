@@ -37,5 +37,10 @@ temp_mean = data["temp"].mean()
 #Get data in row
 # print(data[data.day == "Monday"])
 
-#Get data of row with max 'temp'
-print(data[data.temp == data["temp"].max()])
+# #Get data of row with max 'temp'
+# print(data[data.temp == data["temp"].max()])
+
+#Get temperature of Monday and convert it to farenheight
+
+monday = data[data.day == "Monday"]
+monday_temp = ((monday.temp) * 1.8) + 32
