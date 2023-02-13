@@ -14,4 +14,15 @@
 #             #Append index [1] of each row to the temperature list as an integer
 #             temperatures.append(int(row[1]))
 #     print(temperatures)
-            
+
+import pandas 
+
+data = pandas.read_csv("weather_data.csv")
+
+#Convert dataframe to dictionary
+data_dict = data.to_dict()
+print(data_dict)
+
+#Convert series to list
+temp_list = data["temp"].to_list()
+print(temp_list)
