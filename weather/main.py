@@ -32,4 +32,10 @@ temp_mean = data["temp"].mean()
 # print(temp_mean)
 
 #Get max of 'temp' using pandas
-print(data["temp"].max())
+# print(data["temp"].max())
+
+#Get data in row
+# print(data[data.day == "Monday"])
+
+#Get data of row with max 'temp'
+print(data[data.temp == data["temp"].max()])
