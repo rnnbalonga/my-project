@@ -16,7 +16,11 @@ print(gray_squirrel_count)
 print(red_squirrel_count)
 print(black_squirrel_count)
 
-# squirrel_new = {
-#     'Fur Color': [],
-#     'Count': []
-# }
+#Create a dictionary to turn into DataFrame
+squirrel_new = {
+    'Fur Color': ["Gray", "Cinnamon", "BLack"],
+    'Count': [gray_squirrel_count, red_squirrel_count, black_squirrel_count]
+}
+
+df = pd.DataFrame.from_dict(squirrel_new)
+print(df)
