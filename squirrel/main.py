@@ -22,5 +22,6 @@ squirrel_new = {
     'Count': [gray_squirrel_count, red_squirrel_count, black_squirrel_count]
 }
 
+
 df = pd.DataFrame.from_dict(squirrel_new)
-print(df)
+df.to_csv("squirrel_color_count.csv")
