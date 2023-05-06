@@ -38,7 +38,7 @@ while len(user_guess) < 50:
         t.write(answer_state)
     
 
-
+print(type(unmemorized_states))
 
 
 #Set up getting coordinates via mouseclick on screen
