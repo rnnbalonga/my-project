@@ -15,6 +15,10 @@ LONG_BREAK_MIN = 20
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+def countdown(count):
+    if count > 0:
+            window.after(1000, countdown, count - 1)
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -32,7 +36,7 @@ canvas = Canvas(width=210, height=224, bg=YELLOW, highlightthickness=0)
 #Grab tomato photo
 tomato_img = PhotoImage(file="tomato.png")
 canvas.create_image(103, 112, image=tomato_img)
-canvas.create_text(103, 130, text="00:00", fill="white", font=("Arial", 24))
+timer_text = canvas.create_text(103, 130, text="00:00", fill="white", font=("Arial", 24))
 canvas.grid(column=1, row=1)
 
 
