@@ -14,6 +14,9 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
+def timer_start():
+    countdown(5)
+
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def countdown(count):
     canvas.itemconfig(timer_text, text=count)
@@ -40,12 +43,9 @@ canvas.create_image(103, 112, image=tomato_img)
 timer_text = canvas.create_text(103, 130, text="00:00", fill="white", font=("Arial", 24))
 canvas.grid(column=1, row=1)
 
-countdown(5)
-
-
 #Start Button
 start = Button()
-start.config(text="Start", font=("Arial", 10))
+start.config(text="Start", font=("Arial", 10), command=timer_start)
 start.grid(column=0, row=2)
 
 #Reset Button
