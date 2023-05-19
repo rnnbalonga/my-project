@@ -21,6 +21,12 @@ window = Tk()
 window.title("Pomodoro")
 window.config(padx=100, pady=50, bg=YELLOW)
 
+#Add Main Text
+main_text = Label()
+main_text.config(text="Timer", font=("Courier",56), bg=YELLOW, fg=GREEN)
+main_text.pack()
+
+
 #Create canvas
 canvas = Canvas(width=210, height=224, bg=YELLOW, highlightthickness=0)
 #Grab tomato photo
