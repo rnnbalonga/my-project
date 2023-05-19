@@ -24,13 +24,18 @@ def timer_start():
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
 
+    #TEST CASE
+    # work_sec = 25
+    # short_break_sec = 5
+    # long_break_sec = 10
+
     #Set countdown value depending on number of reps
     if reps % 8 == 0:
         countdown(long_break_sec)
-        main_text.config(text="Long Break")
+        main_text.config(text="Long Break", fg=RED)
     elif reps % 2 == 0:
         countdown(short_break_sec)
-        main_text.config(text="Short Break")
+        main_text.config(text="Short Break", fg=PINK)
     else:
         countdown(work_sec)
         main_text.config(text="Work")
