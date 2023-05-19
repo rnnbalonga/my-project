@@ -25,7 +25,9 @@ def countdown(count):
     count_min = math.floor(count / 60)
     count_sec = count % 60
     #Dynamically change seconds
-    if count_sec == 0:
+    if count_sec < 10:
+         count_sec = f"0{count_sec}"
+    elif count_sec == 00:
          count_sec == "00"
 
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
