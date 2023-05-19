@@ -27,10 +27,13 @@ def timer_start():
     #Set countdown value depending on number of reps
     if reps % 8 == 0:
         countdown(long_break_sec)
+        main_text.config(text="Long Break")
     elif reps % 2 == 0:
         countdown(short_break_sec)
+        main_text.config(text="Short Break")
     else:
         countdown(work_sec)
+        main_text.config(text="Work")
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def countdown(count):
@@ -47,6 +50,8 @@ def countdown(count):
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
             window.after(1000, countdown, count - 1)
+    else: 
+        timer_start()
 
 
 # ---------------------------- UI SETUP ------------------------------- #
