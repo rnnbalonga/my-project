@@ -11,8 +11,19 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
+timer = None
 
 # ---------------------------- TIMER RESET ------------------------------- # 
+
+def timer_reset():
+    window.after_cancel(timer)
+    canvas.itemconfig(timer_text, text="00:00")
+    main_text.config(text="Timer")
+    checkmark.config(text="")
+    global reps
+    reps = 0
+
+
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
@@ -20,14 +31,14 @@ def timer_start():
     global reps
     reps += 1
 
-    work_sec = WORK_MIN * 60
-    short_break_sec = SHORT_BREAK_MIN * 60
-    long_break_sec = LONG_BREAK_MIN * 60
+    # work_sec = WORK_MIN * 60
+    # short_break_sec = SHORT_BREAK_MIN * 60
+    # long_break_sec = LONG_BREAK_MIN * 60
 
     #TEST CASE
-    # work_sec = 25
-    # short_break_sec = 5
-    # long_break_sec = 10
+    work_sec = 25
+    short_break_sec = 5
+    long_break_sec = 10
 
     #Set countdown value depending on number of reps
     if reps % 8 == 0:
@@ -54,9 +65,15 @@ def countdown(count):
 
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-            window.after(1000, countdown, count - 1)
+            global timer
+            timer = window.after(1000, countdown, count - 1)
     else: 
         timer_start()
+        marks = ""
+        work_sessions = math.floor(reps / 2)
+        for num in range(work_sessions):
+            marks += "✓"
+        checkmark.config(text=marks)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -85,12 +102,12 @@ start.grid(column=0, row=2)
 
 #Reset Button
 reset = Button()
-reset.config(text="Reset", font=("Arial", 10))
+reset.config(text="Reset", font=("Arial", 10), command=timer_reset)
 reset.grid(column=2, row=2)
 
 #Checkmarks
 checkmark = Label()
-checkmark.config(text="✓", bg=YELLOW, fg=GREEN, font=("Arial", 12))
+checkmark.config(text="", bg=YELLOW, fg=GREEN, font=("Arial", 12))
 checkmark.grid(column=1, row=3)
 
 window.mainloop()
