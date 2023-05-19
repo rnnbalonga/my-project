@@ -21,7 +21,7 @@ window = Tk()
 window.title("Pomodoro")
 window.config(padx=100, pady=50, bg=YELLOW)
 
-#Add Main Text
+#Main Text
 main_text = Label()
 main_text.config(text="Timer", font=("Courier",56), bg=YELLOW, fg=GREEN)
 main_text.pack()
@@ -35,6 +35,14 @@ canvas.create_image(103, 112, image=tomato_img)
 canvas.create_text(103, 130, text="00:00", fill="white", font=("Arial", 24))
 canvas.pack()
 
+#Start Button
+start = Button()
+start.config(text="Start", font=("Arial", 10))
+start.pack()
 
+#Reset Button
+reset = Button()
+reset.config(text="Reset", font=("Arial", 10))
+reset.pack()
 
 window.mainloop()
