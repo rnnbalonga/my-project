@@ -46,4 +46,9 @@ reset = Button()
 reset.config(text="Reset", font=("Arial", 10))
 reset.grid(column=2, row=2)
 
+#Checkmarks
+checkmark = Label()
+checkmark.config(text="✓", bg=YELLOW, fg=GREEN, font=("Arial", 12))
+checkmark.grid(column=1, row=3)
+
 window.mainloop()
