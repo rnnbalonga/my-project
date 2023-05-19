@@ -31,14 +31,14 @@ def timer_start():
     global reps
     reps += 1
 
-    # work_sec = WORK_MIN * 60
-    # short_break_sec = SHORT_BREAK_MIN * 60
-    # long_break_sec = LONG_BREAK_MIN * 60
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
 
-    #TEST CASE
-    work_sec = 25
-    short_break_sec = 5
-    long_break_sec = 10
+    # #TEST CASE
+    # work_sec = 25
+    # short_break_sec = 5
+    # long_break_sec = 10
 
     #Set countdown value depending on number of reps
     if reps % 8 == 0:
