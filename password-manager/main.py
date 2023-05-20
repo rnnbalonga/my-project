@@ -20,14 +20,27 @@ website_text.config(text="Website:", font=("Arial", 10))
 website_text.pack()
 
 #Email/username
-email_username = Label()
-email_username.config(text="Email/Username:", font=("Arial", 10))
-email_username.pack()
+email_username_text = Label()
+email_username_text.config(text="Email/Username:", font=("Arial", 10))
+email_username_text.pack()
 
 #Password
-password = Label()
-password.config(text="Password:", font=("Arial", 10))
-password.pack()
+password_text = Label()
+password_text.config(text="Password:", font=("Arial", 10))
+password_text.pack()
 
+#INPUT FIELDS
+
+#Website input
+website_input = Entry(width=20)
+website_input.pack()
+
+#Email/username input
+email_username_input = Entry(width=20)
+email_username_input.pack()
+
+#Password input
+password_input = Entry(width=20)
+password_input.pack()
 
 window.mainloop()
