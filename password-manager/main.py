@@ -32,15 +32,25 @@ password_text.pack()
 #INPUT FIELDS
 
 #Website input
-website_input = Entry(width=20)
+website_input = Entry(width=35)
 website_input.pack()
 
 #Email/username input
-email_username_input = Entry(width=20)
+email_username_input = Entry(width=35)
 email_username_input.pack()
 
 #Password input
-password_input = Entry(width=20)
+password_input = Entry(width=21)
 password_input.pack()
+
+#BUTTON
+
+#Generate Password
+gen_pass_button= Button(text="Generate Password", font=("Arial", 10))
+gen_pass_button.pack()
+
+#Add Password
+add_pass_button= Button(text="Add Password", font=("Arial", 10), width=36)
+add_pass_button.pack()
 
 window.mainloop()
