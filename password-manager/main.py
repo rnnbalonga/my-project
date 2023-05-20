@@ -10,47 +10,48 @@ canvas = Canvas(width=210, height=210, highlightthickness=0)
 #Add image to canvas
 logo_img = PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo_img)
-canvas.pack()
+canvas.grid(column=1, row=0)
 
 #TEXT LABELS
 
 #Website
 website_text = Label()
 website_text.config(text="Website:", font=("Arial", 10))
-website_text.pack()
+website_text.grid(column=0, row=1)
 
 #Email/username
 email_username_text = Label()
 email_username_text.config(text="Email/Username:", font=("Arial", 10))
-email_username_text.pack()
+email_username_text.grid(column=0, row=2)
 
 #Password
 password_text = Label()
 password_text.config(text="Password:", font=("Arial", 10))
-password_text.pack()
+password_text.grid(column=0, row=3)
 
 #INPUT FIELDS
 
 #Website input
 website_input = Entry(width=35)
-website_input.pack()
+website_input.grid(column=1, row=1, columnspan=2, sticky="EW")
 
 #Email/username input
 email_username_input = Entry(width=35)
-email_username_input.pack()
+email_username_input.grid(column=1, row=2, columnspan=2, sticky="EW")
 
 #Password input
-password_input = Entry(width=21)
-password_input.pack()
+password_input = Entry()
+password_input.grid(column=1, row=3, sticky="EW")
 
 #BUTTON
 
 #Generate Password
 gen_pass_button= Button(text="Generate Password", font=("Arial", 10))
-gen_pass_button.pack()
+gen_pass_button.grid(column=2, row=3, sticky="EW")
+gen_pass_button.config(padx=10)
 
 #Add Password
-add_pass_button= Button(text="Add Password", font=("Arial", 10), width=36)
-add_pass_button.pack()
+add_pass_button= Button(text="Add", font=("Arial", 10), width=35)
+add_pass_button.grid(column=1, row=5, columnspan=2, sticky="EW")
 
 window.mainloop()
