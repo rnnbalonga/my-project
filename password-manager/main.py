@@ -23,6 +23,8 @@ def generate_password():
 
     password = "".join(password_list)
 
+    password_input.insert(0, password)
+
 
 #------------- SAVE PASSWORD -------------#
 
@@ -99,7 +101,7 @@ password_input.grid(column=1, row=3, sticky="EW")
 #BUTTON
 
 #Generate Password
-gen_pass_button= Button(text="Generate Password", font=("Arial", 10))
+gen_pass_button= Button(text="Generate Password", font=("Arial", 10), command=generate_password)
 gen_pass_button.grid(column=2, row=3, sticky="EW")
 gen_pass_button.config(padx=10)
 
