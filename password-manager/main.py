@@ -34,10 +34,12 @@ password_text.grid(column=0, row=3)
 #Website input
 website_input = Entry(width=35)
 website_input.grid(column=1, row=1, columnspan=2, sticky="EW")
+website_input.focus()
 
 #Email/username input
 email_username_input = Entry(width=35)
 email_username_input.grid(column=1, row=2, columnspan=2, sticky="EW")
+email_username_input.insert(0, "rnnbalongapro@gmail.com")
 
 #Password input
 password_input = Entry()
