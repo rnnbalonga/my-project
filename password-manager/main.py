@@ -7,8 +7,12 @@ def save():
     """
     Save user input into a text file.
     """
+    website = website_input.get()
+    email_username = email_username_input.get()
+    password = password_input.get()
+    
     f = open("data.txt", "a")
-    f.write("Now the file has more content!")
+    f.write(f"\n{website} | {email_username} | {password}")
     f.close()
 
 #------------- GUI -------------#
