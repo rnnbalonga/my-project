@@ -15,6 +15,10 @@ def save():
     f.write(f"\n{website} | {email_username} | {password}")
     f.close()
 
+    website_input.delete(0, 'end')          
+    password_input.delete(0, 'end')
+    website_input.insert(0, "")         
+
 #------------- GUI -------------#
 
 #WINDOW
