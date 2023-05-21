@@ -11,9 +11,9 @@ def save():
     email_username = email_username_input.get()
     password = password_input.get()
     
-    f = open("data.txt", "a")
-    f.write(f"\n{website} | {email_username} | {password}")
-    f.close()
+    with open("data.txt", "a") as f:
+        f.write(f"\n{website} | {email_username} | {password}")
+        f.close()
 
     website_input.delete(0, 'end')          
     password_input.delete(0, 'end')
