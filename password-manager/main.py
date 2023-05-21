@@ -1,5 +1,18 @@
 from tkinter import *
 
+
+#------------- SAVE PASSWORD -------------#
+
+def save():
+    """
+    Save user input into a text file.
+    """
+    f = open("data.txt", "a")
+    f.write("Now the file has more content!")
+    f.close()
+
+#------------- GUI -------------#
+
 #WINDOW
 window = Tk()
 window.config(padx=20, pady=20)
@@ -53,7 +66,8 @@ gen_pass_button.grid(column=2, row=3, sticky="EW")
 gen_pass_button.config(padx=10)
 
 #Add Password
-add_pass_button= Button(text="Add", font=("Arial", 10), width=35)
+add_pass_button= Button(text="Add", font=("Arial", 10), width=35, command=save)
 add_pass_button.grid(column=1, row=5, columnspan=2, sticky="EW")
+
 
 window.mainloop()
