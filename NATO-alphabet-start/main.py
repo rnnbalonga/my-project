@@ -13,7 +13,9 @@ phonetic_code = {row.letter:row.code for (index, row) in phonetic_alphabet_df.it
 
 user_word = input("Write your word here: ").upper()
 
-code_list = [phonetic_code[letter] for letter in user_word]
-
-
-print(code_list)
+try:
+    code_list = [phonetic_code[letter] for letter in user_word]
+except KeyError:
+    print("Only letters in the alphabet please.")
+else:
+    print(code_list)
