@@ -42,16 +42,13 @@ def save():
         messagebox.showerror(title="Empty Field", message="Please fill out all the fields.")
 
     else:
-        is_ok = messagebox.askokcancel(title=website, message=f"These are the details you entered: \nEmail: {email_username} \nPassword: {password} \nDo you want to save these details?")
-        
-        if is_ok:
-            with open("data.txt", "a") as f:
-                f.write(f"\n{website} | {email_username} | {password}")
-                f.close()
+        with open("data.txt", "a") as f:
+            f.write(f"\n{website} | {email_username} | {password}")
+            f.close()
 
-            website_input.delete(0, 'end')          
-            password_input.delete(0, 'end')
-            website_input.insert(0, "")         
+        website_input.delete(0, 'end')          
+        password_input.delete(0, 'end')
+        website_input.insert(0, "")         
 
 #------------- GUI -------------#
 
