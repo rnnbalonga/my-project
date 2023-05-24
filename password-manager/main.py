@@ -48,19 +48,24 @@ def save():
         messagebox.showerror(title="Empty Field", message="Please fill out all the fields.")
 
     else:
-        with open("data.json", "r") as f:
-            #Reading old data
-            data = json.load(f)
-            #Updating old data with new data
-            data.update(new_data)    
+        try:
+            with open("data.json", "r") as f:
+                data = json.load(f)
+                #Reading old data
+        except FileNotFoundError:
+            with open("data.json", "w") as f:
+                json.dump(new_data, f, indent= 4)
+        else:
+                #Updating old data with new data
+                data.update(new_data)
 
-        with open("data.json", "w") as f:
-            #Saving updated data
-            json.dump(new_data, f, indent= 4)
+                with open("data.json", "w") as f:
+                    json.dump(new_data, f, indent= 4)   
 
-        website_input.delete(0, 'end')          
-        password_input.delete(0, 'end')
-        website_input.insert(0, "")         
+        finally:
+            website_input.delete(0, 'end')          
+            password_input.delete(0, 'end')
+            website_input.insert(0, "")         
 
 #------------- GUI -------------#
 
