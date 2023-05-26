@@ -116,6 +116,12 @@ password_input.grid(column=1, row=3, sticky="EW")
 
 #BUTTON
 
+#Search Website
+search_website_button= Button(text="Search", font=("Arial", 10), command=generate_password)
+search_website_button.grid(column=2, row=1, sticky="EW")
+search_website_button.config(padx=10)
+
+
 #Generate Password
 gen_pass_button= Button(text="Generate Password", font=("Arial", 10), command=generate_password)
 gen_pass_button.grid(column=2, row=3, sticky="EW")
