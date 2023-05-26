@@ -65,8 +65,23 @@ def save():
         finally:
             website_input.delete(0, 'end')          
             password_input.delete(0, 'end')
-            website_input.insert(0, "")         
+            website_input.insert(0, "")  
 
+def find_password():
+    """
+    Search for existing username & password in database
+    """       
+    website = website_input.get()
+
+    if website == "":
+        messagebox.showerror(title="Empty Field", message="Please fill out website.")
+    else:
+        try:
+            with open("data.json", "r") as f:
+                data = json.load(f)
+                messagebox.showinfo(title="Password", message=f"Email/Username: {data[website]['email']} \nPassword: {data[website]['password']}")
+        except:
+            print("wsup")
 #------------- GUI -------------#
 
 #WINDOW
@@ -117,7 +132,7 @@ password_input.grid(column=1, row=3, sticky="EW")
 #BUTTON
 
 #Search Website
-search_website_button= Button(text="Search", font=("Arial", 10), command=generate_password)
+search_website_button= Button(text="Search", font=("Arial", 10), command=find_password)
 search_website_button.grid(column=2, row=1, sticky="EW")
 search_website_button.config(padx=10)
 
