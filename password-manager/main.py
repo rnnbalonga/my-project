@@ -81,7 +81,8 @@ def find_password():
                 data = json.load(f)
                 messagebox.showinfo(title="Password", message=f"Email/Username: {data[website]['email']} \nPassword: {data[website]['password']}")
         except:
-            print("wsup")
+            messagebox.showerror(title="No Data", message="You don't have a saved password for this website.")
+            
 #------------- GUI -------------#
 
 #WINDOW
