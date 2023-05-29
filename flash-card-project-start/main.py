@@ -20,8 +20,10 @@ canvas.create_text(400, 150, text="Title", font=("Arial", 10, "italic"))
 canvas.create_text(-400, 263, text="Word", font=("Arial", 60, "bold") )
 
 #Wrong Button
-wrong_button = Button()
+wrong_image = PhotoImage(file="images/wrong.png")
+wrong_button = Button(image=wrong_image)
 wrong_button.grid(row=1,column=0)
+wrong_button.config(highlightthickness=0)
 
 
 #Check Button
