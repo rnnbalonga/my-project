@@ -10,7 +10,7 @@ window.config(padx=20, pady=20, background=BACKGROUND_COLOR)
 window.title("Memory Trainer")
 
 #Canvas
-canvas = Canvas()
+canvas = Canvas(width=800, height=526)
 canvas.grid(row=0,column=0, columnspan=2)
 
 #Title Text
