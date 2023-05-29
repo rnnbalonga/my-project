@@ -27,8 +27,9 @@ wrong_button.config(highlightthickness=0)
 
 
 #Check Button
-check_button = Button()
+check_image = PhotoImage(file="images/right.png")
+check_button = Button(image=check_image)
 check_button.grid(row=1,column=1)
-
+check_button.config(highlightthickness=0)
 
 window.mainloop()
