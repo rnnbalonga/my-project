@@ -17,7 +17,7 @@ canvas.create_image(400, 263, image=front_card_image)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0)
 canvas.create_text(400, 150, text="Title", font=("Arial", 10, "italic"))
-canvas.create_text(-400, 263, text="Word", font=("Arial", 60, "bold") )
+canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold") )
 
 #Wrong Button
 wrong_image = PhotoImage(file="images/wrong.png")
