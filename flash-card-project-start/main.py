@@ -7,15 +7,16 @@ BACKGROUND_COLOR = "#B1DDC6"
 #------ FUNCTIONALITY ------#
 
 df = pd.read_csv('data/french_words.csv')
-keywords = df.to_dict(orient="records")
+learning_keywords = df.to_dict(orient="records")
 
 # print(keywords)
 
 #Randomize word
 
 def random_word():
-    guess_word = random.choice(keywords)
+    guess_word = random.choice(learning_keywords)
     print(guess_word['French'])
+    canvas.itemconfig(card_word, text=guess_word['French'])
 
 
 #------ GUI ------#
@@ -32,8 +33,8 @@ front_card_image = PhotoImage(file="images/card_front.png")
 canvas.create_image(400, 263, image=front_card_image)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0)
-canvas.create_text(400, 150, text="FRENCH", font=("Arial", 10, "italic"))
-canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold") )
+card_title = canvas.create_text(400, 150, text="FRENCH", font=("Arial", 10, "italic"))
+card_word = canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold") )
 
 #Wrong Button
 wrong_image = PhotoImage(file="images/wrong.png")
