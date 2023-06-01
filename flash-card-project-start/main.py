@@ -15,7 +15,7 @@ keywords = df.to_dict(orient="records")
 
 def random_word():
     guess_word = random.choice(keywords)
-    print(guess_word)
+    print(guess_word['French'])
 
 
 #------ GUI ------#
