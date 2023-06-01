@@ -1,4 +1,6 @@
 from tkinter import * 
+import pandas as pd
+import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 
@@ -31,5 +33,13 @@ check_image = PhotoImage(file="images/right.png")
 check_button = Button(image=check_image)
 check_button.grid(row=1,column=1)
 check_button.config(highlightthickness=0)
+
+
+#------ FUNCTIONALITY ------#
+
+df = pd.read_csv('data/french_words.csv')
+keywords = df.to_dict(orient="records")
+
+print(keywords)
 
 window.mainloop()
