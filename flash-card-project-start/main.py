@@ -7,15 +7,17 @@ BACKGROUND_COLOR = "#B1DDC6"
 #------ FUNCTIONALITY ------#
 
 df = pd.read_csv('data/french_words.csv')
-learning_keywords = df.to_dict(orient="records")
+learn_keywords = df.to_dict(orient="records")
+current_card = {}
 
 # print(keywords)
 
 #Randomize word
 
 def random_word():
-    guess_word = random.choice(learning_keywords)
-    canvas.itemconfig(card_word, text=guess_word['French'])
+    global current_card
+    current_card = random.choice(learn_keywords)
+    canvas.itemconfig(card_word, text=current_card['French'])
     canvas.itemconfig(card_title, text="French")
     canvas.itemconfig(card_side, image=front_card_image)
     window.after(3000, flip_card)
@@ -23,6 +25,7 @@ def random_word():
 def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
     canvas.itemconfig(card_title, text="English")
+    canvas.itemconfig(card_word, text=current_card['English'])
     
 
 #Window
