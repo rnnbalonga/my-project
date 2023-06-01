@@ -25,8 +25,7 @@ def random_word():
     canvas.itemconfig(card_title, text="French")
     canvas.itemconfig(card_side, image=front_card_image)
     flip_timer = window.after(3000, flip_card)
-    remove_word()
-
+    
 def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
     canvas.itemconfig(card_title, text="English")
@@ -36,6 +35,7 @@ def remove_word():
     learn_keywords.remove(current_card)
     df = pd.DataFrame(learn_keywords)
     df.to_csv('data/words_to_learn.csv', index=False)
+    random_word()
     
 
 #Window
@@ -68,7 +68,7 @@ wrong_button.config(highlightthickness=0, command=random_word)
 check_image = PhotoImage(file="images/right.png")
 check_button = Button(image=check_image)
 check_button.grid(row=1,column=1)
-check_button.config(highlightthickness=0, command=random_word)
+check_button.config(highlightthickness=0, command=remove_word)
 
 random_word()
 
