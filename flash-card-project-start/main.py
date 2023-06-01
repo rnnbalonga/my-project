@@ -15,12 +15,13 @@ current_card = {}
 #Randomize word
 
 def random_word():
-    global current_card
+    global current_card, flip_timer
+    window.after_cancel(flip_timer)
     current_card = random.choice(learn_keywords)
     canvas.itemconfig(card_word, text=current_card['French'])
     canvas.itemconfig(card_title, text="French")
     canvas.itemconfig(card_side, image=front_card_image)
-    window.after(3000, flip_card)
+    flip_timer = window.after(3000, flip_card)
 
 def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
@@ -32,6 +33,7 @@ def flip_card():
 window = Tk()
 window.config(padx=20, pady=20, background=BACKGROUND_COLOR)
 window.title("Memory Trainer")
+flip_timer = window.after(3000, flip_card)
 
 
 #Canvas
