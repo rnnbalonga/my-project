@@ -16,11 +16,13 @@ learning_keywords = df.to_dict(orient="records")
 def random_word():
     guess_word = random.choice(learning_keywords)
     canvas.itemconfig(card_word, text=guess_word['French'])
+    canvas.itemconfig(card_title, text="French")
     canvas.itemconfig(card_side, image=front_card_image)
     window.after(3000, flip_card)
 
 def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
+    canvas.itemconfig(card_title, text="English")
     
 
 #Window
@@ -37,7 +39,7 @@ back_card_image = PhotoImage(file='images/card_back.png')
 card_side = canvas.create_image(400, 263, image=front_card_image)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0)
-card_title = canvas.create_text(400, 150, text="", font=("Arial", 10, "italic"))
+card_title = canvas.create_text(400, 150, text="", font=("Arial", 20, "italic"))
 card_word = canvas.create_text(400, 263, text="", font=("Arial", 60, "bold") )
 
 
