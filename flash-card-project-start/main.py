@@ -27,6 +27,11 @@ def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
     canvas.itemconfig(card_title, text="English")
     canvas.itemconfig(card_word, text=current_card['English'])
+
+def remove_word():
+    learn_keywords.remove(current_card)
+    df = pd.DataFrame(learn_keywords)
+    df.to_csv('data/words_to_learn', index=False)
     
 
 #Window
