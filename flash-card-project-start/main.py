@@ -4,6 +4,20 @@ import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 
+#------ FUNCTIONALITY ------#
+
+df = pd.read_csv('data/french_words.csv')
+keywords = df.to_dict(orient="records")
+
+# print(keywords)
+
+#Randomize word
+
+def random_word():
+    guess_word = random.choice(keywords)
+    print(guess_word)
+
+
 #------ GUI ------#
 
 #Window
@@ -18,28 +32,21 @@ front_card_image = PhotoImage(file="images/card_front.png")
 canvas.create_image(400, 263, image=front_card_image)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0)
-canvas.create_text(400, 150, text="Title", font=("Arial", 10, "italic"))
+canvas.create_text(400, 150, text="FRENCH", font=("Arial", 10, "italic"))
 canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold") )
 
 #Wrong Button
 wrong_image = PhotoImage(file="images/wrong.png")
 wrong_button = Button(image=wrong_image)
 wrong_button.grid(row=1,column=0)
-wrong_button.config(highlightthickness=0)
+wrong_button.config(highlightthickness=0, command=random_word)
 
 
 #Check Button
 check_image = PhotoImage(file="images/right.png")
 check_button = Button(image=check_image)
 check_button.grid(row=1,column=1)
-check_button.config(highlightthickness=0)
+check_button.config(highlightthickness=0, command=random_word)
 
-
-#------ FUNCTIONALITY ------#
-
-df = pd.read_csv('data/french_words.csv')
-keywords = df.to_dict(orient="records")
-
-print(keywords)
 
 window.mainloop()
