@@ -1,12 +1,15 @@
 from tkinter import * 
 import pandas as pd
 import random
+import os
 
 BACKGROUND_COLOR = "#B1DDC6"
 
 #------ FUNCTIONALITY ------#
-
-df = pd.read_csv('data/french_words.csv')
+if os.path.isfile('data/words_to_learn.csv'):
+    df = pd.read_csv('data/words_to_learn.csv')
+else:
+    df = pd.read_csv('data/french_words.csv')
 learn_keywords = df.to_dict(orient="records")
 current_card = {}
 
@@ -22,6 +25,7 @@ def random_word():
     canvas.itemconfig(card_title, text="French")
     canvas.itemconfig(card_side, image=front_card_image)
     flip_timer = window.after(3000, flip_card)
+    remove_word()
 
 def flip_card():
     canvas.itemconfig(card_side, image=back_card_image)
@@ -31,7 +35,7 @@ def flip_card():
 def remove_word():
     learn_keywords.remove(current_card)
     df = pd.DataFrame(learn_keywords)
-    df.to_csv('data/words_to_learn', index=False)
+    df.to_csv('data/words_to_learn.csv', index=False)
     
 
 #Window
