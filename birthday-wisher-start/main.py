@@ -25,4 +25,8 @@ def send_quote():
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email, 
                                 to_addrs="fightmaregaming@gmail.com", 
-                                msg=quote[quote_number])
+                                msg=f"Subject: Monday Motivation" {quote[quote_number]})
+            quote_number += 1
+            print(quote_number)
+
+send_quote()
