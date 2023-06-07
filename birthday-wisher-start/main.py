@@ -1,8 +1,9 @@
 import random
+import smtplib
+import datetime as dt
 
-spec = random.randint(1,15)
-double_spec = spec * 2
-print(spec)
-print(double_spec)
+my_email = "ruben.lingito@gmail.com"
+password = "sxznwsoaehfcsnpm"
 
-print("hey")
+
+
