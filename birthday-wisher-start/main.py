@@ -25,12 +25,16 @@ today_day = today.day
 for i in range(0,2):
     if today_month == email_list[i]['month']:
         if today_day == email_list[i]['day']:
-            print("HEYYYYY")
-            with open()
+            name = email_list[i]['name']
+            with open(random.choice(email_templates), 'r') as email_file:
+                email_content = email_file.readlines()
+                email_greeting = email_content[0].replace("[NAME]", name)
+                print(email_content)
+
+
             # with smtplib.SMTP("smtp.gmail.com") as connection:
             #     connection.starttls()
             #     connection.login(user=my_email, password=password)
             #     connection.sendmail(from_addr=my_email, 
             #                         to_addrs="fightmaregaming@gmail.com", 
             #                         msg=f"Subject:HAPPY BIRTHDAY TO YOU!\n\n{random.choice(quote)}")
-
