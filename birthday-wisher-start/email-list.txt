@@ -1,5 +1,4 @@
-Hello there you angel from my nightmare
-
-Hey hey hey what's up
-
-I'm a mess mess messs mess mess mess mess
+name,email,year,month,day
+Nike,nikebalonga@gmail.com,1993,6,07
+Sniff,kawasakitoks@gmail.com,6,08
+Mia,minyoungclaire@gmail.com,12,22
