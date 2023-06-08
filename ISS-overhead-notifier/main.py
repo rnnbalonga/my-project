@@ -2,25 +2,28 @@ import requests
 import json
 import datetime as dt
 
-url = 'https://api.sunrise-sunset.org/json'
-
-today = dt.datetime.now()
-
-#Set parameters for API
-#'lng' and 'lat' are currently set to Kawasaki's coordinates. Consider creating a constant for this instead.
+#Sunrise & Sunset API
+#Set Parameters
+MY_LNG = 35.5223
+MY_LAT = 139.7308
 
 parameters = {
-    'lng' : 35.5223,
-    'lat' : 139.7308,
+    'lng' : MY_LNG,
+    'lat' : MY_LAT,
     'formatted' : 0,
 }
 
-response = requests.get(url, params=parameters)
+response = requests.get('https://api.sunrise-sunset.org/json', params=parameters)
 response.raise_for_status()
 data = response.json()
-sunrise = data['results']['sunrise'].split("T")[1].split(":")[0]
-sunset = data['results']['sunset'].split("T")[1].split(":")[0]
 
+#Set Sunrise & Sunset
+sunrise = int(data['results']['sunrise'].split("T")[1].split(":")[0])
+sunset = int(data['results']['sunset'].split("T")[1].split(":")[0])
+
+today = dt.datetime.now()
+
+#
 
 print(sunrise)
 print(sunset)
