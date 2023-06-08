@@ -1,9 +1,10 @@
 import requests
 import json
 import datetime as dt
+import smtplib
 
-MY_LONG = 35.5223
-MY_LAT = 139.7308
+MY_LONG = 139.7029
+MY_LAT = 35.5308
 
 today = dt.datetime.now()
 current_hour = today.hour
@@ -19,8 +20,8 @@ response = requests.get('https://api.sunrise-sunset.org/json', params=parameters
 response.raise_for_status()
 data = response.json()
 
-sunrise = int(data['results']['sunrise'].split("T")[1].split(":")[0])
-sunset = int(data['results']['sunset'].split("T")[1].split(":")[0])
+sunrise = int(data['results']['sunrise'].split("T")[1].split(":")[0]) 
+sunset = int(data['results']['sunset'].split("T")[1].split(":")[0]) 
 
 #ISS API
 iss_response = requests.get('http://api.open-notify.org/iss-now.json')
@@ -29,6 +30,10 @@ iss_data = iss_response.json()
 
 iss_longitude = float(iss_data['iss_position']['longitude'])
 iss_latitude = float(iss_data['iss_position']['latitude'])
+
+#Email settings
+my_email = "ruben.lingito@gmail.com"
+password = "kizszdeyikbdrhig"
 
 
 ##### FUNCTIONS #####
@@ -61,7 +66,12 @@ def send_mail():
     '''
     If both iss_location_check and check_dark return TRUE, an email will be sent.
     '''
+    if iss_location_check() and check_dark():
+        with smtplib.SMTP("smtp.gmail.com") as connection:
+                    connection.starttls()
+                    connection.login(user=my_email, password=password)
+                    connection.sendmail(from_addr=my_email, 
+                                        to_addrs="nikebalonga@gmail.com", 
+                                        msg=f"ISS Location Report\n\nYou might be able to see the ISS above you. Check outside!\nKind regards,\nNike")
 
-
-iss_location_check()
-check_dark()
+print(sunrise)
