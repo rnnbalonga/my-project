@@ -9,11 +9,12 @@ today = dt.datetime.now()
 #Set parameters for API
 
 parameters = {
-    lng: 35.53,
-    lat: 139.70,
-    date: today,
+    'lng' : 35.53,
+    'lat' : 139.70,
+    'date': today,
 }
 
 response = requests.get(url)
+print(response)
 
 
