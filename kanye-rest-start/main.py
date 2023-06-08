@@ -1,9 +1,14 @@
 from tkinter import *
-
+import requests
+import json
 
 def get_quote():
-    pass
-    #Write your code here.
+    response = requests.get(url="https://api.kanye.rest")
+    if response.status_code == 200:
+        data = json.loads(response.text)
+        print(data['quote'])
+    else:
+        print("Error", response.status_code)
 
 
 
