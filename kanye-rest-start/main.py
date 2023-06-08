@@ -6,7 +6,7 @@ def get_quote():
     response = requests.get(url="https://api.kanye.rest")
     if response.status_code == 200:
         data = json.loads(response.text)
-        print(data['quote'])
+        canvas.itemconfig(quote_text, text=data['quote'])
     else:
         print("Error", response.status_code)
 
