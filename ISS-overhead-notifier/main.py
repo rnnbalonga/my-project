@@ -68,13 +68,19 @@ def send_mail():
     '''
     If both iss_location_check and check_dark return TRUE, an email will be sent.
     '''
-    if iss_location_check() and check_dark():
+    is_dark = check_dark()
+    is_near = iss_location_check()
+
+    print(is_dark)
+    print(is_near)
+
+    if is_dark and is_near:
         with smtplib.SMTP("smtp.gmail.com") as connection:
                     connection.starttls()
                     connection.login(user=my_email, password=password)
                     connection.sendmail(from_addr=my_email, 
                                         to_addrs="nikebalonga@gmail.com", 
-                                        msg=f"ISS Location Report\n\nYou might be able to see the ISS above you. Check outside!\nKind regards,\nNike")
+                                        msg=f"Subject:ISS Location Report\n\nYou might be able to see the ISS above you. Check outside!\n\nKind regards,\nNike")
     else:
         print("EGULS LODS")
 
