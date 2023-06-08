@@ -57,7 +57,9 @@ def check_dark():
     '''
     This function checks if current hour is between sunset and sunrise.
     '''
-    if current_hour < sunrise or current_hour > sunset:
+    jp_sunrise = (sunrise + 9) % 24
+    jp_sunset = (sunset + 9) % 24
+    if current_hour < jp_sunrise or current_hour > jp_sunset:
         return True
     else:
         return False
@@ -73,5 +75,7 @@ def send_mail():
                     connection.sendmail(from_addr=my_email, 
                                         to_addrs="nikebalonga@gmail.com", 
                                         msg=f"ISS Location Report\n\nYou might be able to see the ISS above you. Check outside!\nKind regards,\nNike")
+    else:
+        print("EGULS LODS")
 
-print(sunrise)
+send_mail()
