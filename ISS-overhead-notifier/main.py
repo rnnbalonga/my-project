@@ -23,8 +23,14 @@ sunset = int(data['results']['sunset'].split("T")[1].split(":")[0])
 
 today = dt.datetime.now()
 
-#
+#ISS API
+iss_response = requests.get('http://api.open-notify.org/iss-now.json')
+iss_response.raise_for_status()
+iss_data = iss_response.json()
 
-print(sunrise)
-print(sunset)
-print(today.hour)
+
+iss_longitude = float(iss_data['iss_position']['longitude'])
+iss_latitude = float(iss_data['iss_position']['latitude'])
+
+print(iss_longitude)
+print(iss_latitude)
