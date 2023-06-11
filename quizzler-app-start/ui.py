@@ -18,7 +18,7 @@ class QuizUI:
         self.canvas = Canvas(width=300, height=250)
         self.canvas.grid(row=1, column=0, columnspan=2, pady=20)
         self.canvas.config(bg="white", highlightthickness=0)
-        self.question_text = self.canvas.create_text(150,150, text="hey", font=("Arial", 20, "italic"))
+        self.question_text = self.canvas.create_text(150, 150, width=280, text="hey", font=("Arial", 20, "italic"))
 
         #Check Button
         self.check_image = PhotoImage(file="images/true.png")
