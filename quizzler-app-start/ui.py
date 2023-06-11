@@ -7,15 +7,27 @@ class QuizUI:
     def __init__(self):
         self.window = Tk()
         self.window.title("Quiz App")
-        self.window.minsize(width=320,height=500)
         self.window.config(bg=THEME_COLOR, padx=20, pady=20)
 
         self.score_label = Label(text="Score: ", font=("Arial", 12), bg=THEME_COLOR, fg="white")
         self.score_label.grid(row=0, column=1)
 
         self.canvas = Canvas(width=300, height=250)
-        self.canvas.grid(row=2, column=0, columnspan=2)
+        self.canvas.grid(row=1, column=0, columnspan=2, pady=20)
         self.canvas.config(bg="white", highlightthickness=0)
         self.question_text = self.canvas.create_text(150,150, text="hey", font=("Arial", 20, "italic"))
+
+        #Check Button
+        self.check_image = PhotoImage(file="images/true.png")
+        self.check_button = Button(image=self.check_image)
+        self.check_button.grid(row=2,column=0)
+        self.check_button.config(highlightthickness=0)
+
+
+        #Wrong Button
+        self.wrong_image = PhotoImage(file="images/false.png")
+        self.wrong_button = Button(image=self.wrong_image)
+        self.wrong_button.grid(row=2,column=1)
+        self.wrong_button.config(highlightthickness=0)
 
         self.window.mainloop()
