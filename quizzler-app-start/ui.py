@@ -1,10 +1,11 @@
 from tkinter import *
+from quiz_brain import QuizBrain
 
 THEME_COLOR = "#375362"
 
 class QuizUI:
     
-    def __init__(self, quiz_brain):
+    def __init__(self, quiz_brain: QuizBrain):
         self.quiz = quiz_brain
 
         self.window = Tk()
@@ -32,7 +33,10 @@ class QuizUI:
         self.wrong_button.grid(row=2,column=1)
         self.wrong_button.config(highlightthickness=0)
 
+        self.get_next_question()
+
         self.window.mainloop()
 
     def get_next_question(self):
-        pass
+        q_text = self.quiz.next_question()
+        self.canvas.itemconfig(self.question_text, q_text)
