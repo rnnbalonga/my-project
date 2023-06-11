@@ -42,9 +42,9 @@ class QuizUI:
         self.canvas.itemconfig(self.question_text, text=q_text)
     
     def answer_true(self):
-        user_answer = True
+        user_answer = "True"
         self.quiz.check_answer(user_answer)
     
     def answer_false(self):
-        user_answer = False
+        user_answer = "False"
         self.quiz.check_answer(user_answer)
