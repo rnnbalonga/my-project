@@ -4,7 +4,9 @@ THEME_COLOR = "#375362"
 
 class QuizUI:
     
-    def __init__(self):
+    def __init__(self, quiz_brain):
+        self.quiz = quiz_brain
+
         self.window = Tk()
         self.window.title("Quiz App")
         self.window.config(bg=THEME_COLOR, padx=20, pady=20)
@@ -31,3 +33,6 @@ class QuizUI:
         self.wrong_button.config(highlightthickness=0)
 
         self.window.mainloop()
+
+    def get_next_question(self):
+        pass
