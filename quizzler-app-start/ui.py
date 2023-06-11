@@ -2,7 +2,10 @@ from tkinter import *
 
 THEME_COLOR = "#375362"
 
-window = Tk()
-window.title("Quiz App")
-window.config(bg=THEME_COLOR)
-window.mainloop()
+class QuizUI:
+    
+    def __init__(self):
+        self.window = Tk()
+        self.window.title("Quiz App")
+        self.window.config(bg=THEME_COLOR)
+        self.window.mainloop()
