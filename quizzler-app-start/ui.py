@@ -22,14 +22,14 @@ class QuizUI:
 
         #Check Button
         self.check_image = PhotoImage(file="images/true.png")
-        self.check_button = Button(image=self.check_image)
+        self.check_button = Button(image=self.check_image,)
         self.check_button.grid(row=2,column=0)
-        self.check_button.config(highlightthickness=0)
+        self.check_button.config(highlightthickness=0, command=self.answer_true)
 
 
         #Wrong Button
         self.wrong_image = PhotoImage(file="images/false.png")
-        self.wrong_button = Button(image=self.wrong_image)
+        self.wrong_button = Button(image=self.wrong_image, command=self.answer_false)
         self.wrong_button.grid(row=2,column=1)
         self.wrong_button.config(highlightthickness=0)
 
@@ -40,3 +40,11 @@ class QuizUI:
     def get_next_question(self):
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
+    
+    def answer_true(self):
+        user_answer = True
+        self.quiz.check_answer(user_answer)
+    
+    def answer_false(self):
+        user_answer = False
+        self.quiz.check_answer(user_answer)
