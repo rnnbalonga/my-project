@@ -40,9 +40,20 @@ class QuizUI:
     def get_next_question(self):
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
+        self.canvas.config(bg="white")
     
     def answer_true(self):
-        self.quiz.check_answer("True")
-    
+        is_right = self.quiz.check_answer("True")
+        self.give_feedback(is_right)
+
     def answer_false(self):
-        self.quiz.check_answer("False")
+        is_right = self.quiz.check_answer("False")
+        self.give_feedback(is_right)
+
+    def give_feedback(self, is_right):
+        if is_right:
+            self.canvas.config(bg="light green")
+            self.window.after(1000, self.get_next_question)
+        else:
+            self.canvas.config(bg="red")
+            self.window.after(1000, self.get_next_question)
