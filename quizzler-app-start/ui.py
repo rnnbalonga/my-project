@@ -12,7 +12,7 @@ class QuizUI:
         self.window.title("Quiz App")
         self.window.config(bg=THEME_COLOR, padx=20, pady=20)
 
-        self.score_label = Label(text="Score: ", font=("Arial", 12), bg=THEME_COLOR, fg="white")
+        self.score_label = Label(text="Score: 0/10", font=("Arial", 12), bg=THEME_COLOR, fg="white")
         self.score_label.grid(row=0, column=1)
 
         self.canvas = Canvas(width=300, height=250)
@@ -41,6 +41,7 @@ class QuizUI:
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
         self.canvas.config(bg="white")
+        self.score_label.config(text=f"Score: {self.quiz.score}/10")
     
     def answer_true(self):
         is_right = self.quiz.check_answer("True")
@@ -57,3 +58,4 @@ class QuizUI:
         else:
             self.canvas.config(bg="red")
             self.window.after(1000, self.get_next_question)
+        
