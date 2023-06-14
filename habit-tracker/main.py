@@ -20,8 +20,10 @@ graph_config = {
     "type": "int",
     "color": "shibafu",
 }
-# response = requests.post(url=pixela_endpoint,json=user_params)
-# print(response.text)
 
-response = requests.post(url=graph_endpoint,json=graph_config)
+headers = {
+    "X-USER-TOKEN": TOKEN
+}
+
+response = requests.post(url=graph_endpoint,json=graph_config, headers=headers)
 print(response.text)
