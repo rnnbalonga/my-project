@@ -5,7 +5,7 @@ USERNAME = "nikebalonga"
 TOKEN = "29b2f8302a75c6bbbccc0867ba79ad8e"
 GRAPH_ID = "q1c1b0f4b2302ca3"
 
-date = dt.datetime(2023,6,15)
+date = dt.datetime.now()
 date_format = date.strftime("%Y%m%d")
 
 pixela_endpoint = "https://pixe.la/v1/users"
@@ -40,6 +40,11 @@ graph_update_config = {
     "unit" : "Lessons"
 }
 
+pixel_post_config = {
+    "date" : date_format,
+    "quantity" : input("How many lessons did you do today?: "),
+}
+
 pixel_create_config = {
     "date" : date.strftime("%Y%m%d"),
     "quantity": "1"
@@ -54,12 +59,12 @@ pixel_update_config = {
 # response = requests.post(url=graph_endpoint,json=graph_config, headers=headers)
 # print(response.text)
 
-# # Post
-# response = requests.post(url=pixel_create_endpoint,headers=headers,json=pixel_create_config)
-# print(response.text)
-
 #Update Graph
 # response = requests.put(url=graph_update_endpoint, headers=headers, json=graph_update_config)
+# print(response.text)
+
+# Post a Pixel
+# response = requests.post(url=pixel_create_endpoint,headers=headers,json=pixel_create_config)
 # print(response.text)
 
 #Update Pixel
@@ -68,5 +73,5 @@ pixel_update_config = {
 # print(response.text)
 
 #Delete a pixel
-response = requests.delete(url=pixel_update_endpoint, headers=headers)
-print(response.text)
+# response = requests.delete(url=pixel_update_endpoint, headers=headers)
+# print(response.text)
