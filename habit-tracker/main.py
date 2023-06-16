@@ -5,7 +5,7 @@ USERNAME = "nikebalonga"
 TOKEN = "29b2f8302a75c6bbbccc0867ba79ad8e"
 GRAPH_ID = "q1c1b0f4b2302ca3"
 
-date = dt.datetime.now()
+date = dt.datetime(2023,6,15)
 date_format = date.strftime("%Y%m%d")
 
 pixela_endpoint = "https://pixe.la/v1/users"
@@ -63,7 +63,10 @@ pixel_update_config = {
 # print(response.text)
 
 #Update Pixel
+#REMINDER: ALWAYS CHECK THE TYPE OF REQUEST
 # response = requests.put(url=pixel_update_endpoint, headers=headers, json=pixel_update_config)
 # print(response.text)
 
 #Delete a pixel
+response = requests.delete(url=pixel_update_endpoint, headers=headers)
+print(response.text)
