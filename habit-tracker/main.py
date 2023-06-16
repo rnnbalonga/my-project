@@ -5,12 +5,16 @@ USERNAME = "nikebalonga"
 TOKEN = "29b2f8302a75c6bbbccc0867ba79ad8e"
 GRAPH_ID = "q1c1b0f4b2302ca3"
 
+date = dt.datetime.now()
+date_format = date.strftime("%Y%m%d")
+
 pixela_endpoint = "https://pixe.la/v1/users"
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 graph_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 pixel_create_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
+pixel_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{date_format}"
 
-date = dt.datetime(2023, 6, 15)
+
 
 headers = {
     "X-USER-TOKEN": TOKEN
@@ -41,6 +45,9 @@ pixel_create_config = {
     "quantity": "1"
 }
 
+pixel_update_config = {
+    "quantity" : '7',
+}
 
 
 #Create Graph
@@ -56,3 +63,7 @@ pixel_create_config = {
 # print(response.text)
 
 #Update Pixel
+# response = requests.put(url=pixel_update_endpoint, headers=headers, json=pixel_update_config)
+# print(response.text)
+
+#Delete a pixel
