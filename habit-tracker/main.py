@@ -7,9 +7,14 @@ GRAPH_ID = "q1c1b0f4b2302ca3"
 
 pixela_endpoint = "https://pixe.la/v1/users"
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
+graph_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 pixel_create_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 
 date = dt.datetime(2023, 6, 15)
+
+headers = {
+    "X-USER-TOKEN": TOKEN
+}
 
 user_params = {
     "token": TOKEN,
@@ -26,8 +31,9 @@ graph_config = {
     "color": "shibafu",
 }
 
-headers = {
-    "X-USER-TOKEN": TOKEN
+graph_update_config = {
+    "name" : "Eat. Sleep. Code.",
+    "unit" : "Lessons"
 }
 
 pixel_create_config = {
@@ -36,11 +42,17 @@ pixel_create_config = {
 }
 
 
+
 #Create Graph
 # response = requests.post(url=graph_endpoint,json=graph_config, headers=headers)
 # print(response.text)
 
-# Post
-response = requests.post(url=pixel_create_endpoint,headers=headers,json=pixel_create_config)
-print(response.text)
+# # Post
+# response = requests.post(url=pixel_create_endpoint,headers=headers,json=pixel_create_config)
+# print(response.text)
 
+#Update Graph
+# response = requests.put(url=graph_update_endpoint, headers=headers, json=graph_update_config)
+# print(response.text)
+
+#Update Pixel
