@@ -25,25 +25,23 @@ exercise_post_config = {
 #Post an exercise
 natural_exercise_response = requests.post(url=natural_exercise_endpoint,headers=headers,json=exercise_post_config)
 exercise_json = natural_exercise_response.json()
-print(exercise_json)
+print(len(exercise_json["exercises"]))
 
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
 
 
 for exercise in exercise_json["exercises"]:
-  sheety_post_config = {
-    "workout": {
-        "date": today_date,
-        "time": now_time,
-        "exercise": exercise["name"].title(),
-        "duration": exercise["duration_min"],
-        "calories": exercise["nf_calories"],
-                }   
+    sheety_post_config = {
+        "workout": {
+            "date": today_date,
+            "time": now_time,
+            "exercise": exercise["name"].title(),
+            "duration": exercise["duration_min"],
+            "calories": exercise["nf_calories"],
+        }   
     }
-    
-print(sheety_post_config)
 
-# Post a row on Google Sheets
-sheety_response = requests.post(url=sheety_post_endpoint,json=sheety_post_config)
-print(sheety_response.status_code)
+    # Post a row on Google Sheets
+    sheety_response = requests.post(url=sheety_post_endpoint,json=sheety_post_config)
+    print(sheety_response.status_code)
