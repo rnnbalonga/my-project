@@ -3,14 +3,19 @@ from datetime import datetime
 
 APP_ID = "3ef3941b"
 APP_KEY = "18a1fd58ed4bc36ec5d39d25b6d2d44a"
+TOKEN = "J4$h2G#y5Aq9T*c6D8f1Qw0Zx7E3rB+vN1M7"
 
 #ENDPOINTS
 natural_exercise_endpoint = f"https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_post_endpoint = "https://api.sheety.co/0306c09badd8a97583ca2bcadecfe47d/myWorkouts/workouts"
 
+# headers = {
+#     "x-app-id": APP_ID,
+#     "x-app-key": APP_KEY,
+# }
+
 headers = {
-    "x-app-id": APP_ID,
-    "x-app-key": APP_KEY,
+    "Authorization": f'Bearer {TOKEN}'
 }
 
 exercise_post_config = {
