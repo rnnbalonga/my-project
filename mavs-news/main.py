@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+import datetime
 
 response = requests.get("https://www.mavsmoneyball.com/")
 source = response.text
@@ -22,7 +23,9 @@ for article in hero.find_all('div', class_="c-entry-box--compact__body"):
 
 all_articles = pd.DataFrame(article_list, columns=['Title', 'Author', 'Link'])
 
-print(all_articles)
+#Grab Date of Generated Report
+today = datetime.date.today()
+print(today)
 
 #Generate a CSV with columns "Article", "Date Published", "Author", "Link"
-
+all_articles.to_csv(f"{today}.csv", index= False)
