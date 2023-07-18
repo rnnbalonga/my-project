@@ -1,0 +1,554 @@
+Jan 1 Eccl 3:1‐8, Gen 1, 1 Chr 1, Luke 1:1‐25
+Jan 2 Ps 1, Gen 2, 1 Chr 2, Luke 1:26‐56
+Jan 3 Ps 2, Gen 3, 1 Chr 3, Luke 1:57‐80
+Jan 4 Ps 3, Gen 4, 1 Chr 4, Luke 2:1‐21
+Jan 5 Ps 4, Gen 5, 1 Chr 5, Luke 2:22‐52
+Jan 6 Ps 5, Gen 6, 1 Chr 6, Luke 3:1‐22
+Jan 7 Ps 6, Gen 7, 1 Chr 7, Luke 3:23‐4:13
+Jan 8 Ps 7, Gen 8:1‐19, 1 Chr 8, Luke 4:14‐44
+Jan 9 Ps 8, Gen 8:20‐9:19, 1 Chr 9,
+Luke 5:1‐6:16
+Jan 10 Ps 9, Gen 9:20‐10:32, 1 Chr 10,
+Luke 6:17‐49
+Jan 11 Ps 10, Gen 11, 1 Chr 11, Luke 7:1‐35
+Jan 12 Ps 11, Gen 12‐13:1, 1 Chr 12,
+Luke 7:36‐8:3
+Jan 13 Ps 12, Gen 13:2‐18, 1 Chr 13,
+Luke 8:4‐21
+Jan 14 Ps 13, Gen 14, 1 Chr 14, Luke 8:22‐56
+Jan 15 Ps 14, Gen 15, 1 Chr 15:1‐16:3,
+Luke 9:1‐50
+Jan 16 Ps 15, Gen 16, 1 Chr 16:4‐43,
+Luke 9:51‐10:24
+Jan 17 Ps 16, Gen 17, 1 Chr 17, Luke 10:25‐42
+Jan 18 Ps 17, Gen 18:1‐15, 1 Chr 18‐20,
+Luke 11:1‐36
+Jan 19 Ps 18, Gen 18:16‐33, 1 Chr 21:1‐17,
+Luke 11:37‐12:12
+Jan 20 Ps 19, Gen 19, 1 Chr 21:18‐22:19,
+Luke 12:13‐48
+Jan 21 Ps 20, Gen 20, 1 Chr 23‐24,
+Luke 12:49‐13:9
+Jan 22 Ps 21, Gen 21:1‐21, 1 Chr 25,
+Luke 13:10‐35
+Jan 23 Ps 22, Gen 21:22‐34, 1 Chr 26, Luke 14
+Jan 24 Ps 23, Gen 22, 1 Chr 27, Luke 15
+Jan 25 Ps 24, Gen 23, 1 Chr 28, Luke 16:1‐
+17:10
+Jan 26 Ps 25, Gen 24, 1 Chr 29:1‐22a,
+Luke 17:11‐37
+Jan 27 Ps 26, Gen 25:1‐18, 1 Chr 29:22b‐30,
+Luke 18:1‐30
+Jan 28 Ps 27, Gen 25:19‐34, 2 Chr 1,
+Luke 18:31‐19:27
+Jan 29 Ps 28, Gen 26, 2 Chr 2, Luke 19:28‐46
+Jan 30 Ps 29, Gen 27:1‐40, 2 Chr 3,
+Luke 19:47‐20:44
+Jan 31 Ps 30, Gen 27:41‐28:9, 2 Chr 4,
+Luke 20:45‐21:38
+Feb 1 Ps 31, Gen 28:10‐22, 2 Chr 5,
+Luke 22:1‐46
+Feb 2 Ps 32, Gen 29:1‐30, 2 Chr 6,
+Luke 22:47‐23:25
+Feb 3 Ps 33, Gen 29:31‐30:43, 2 Chr 7,
+Luke 23:26‐56
+Feb 4 Ps 34, Gen 31, 2 Chr 8, Luke 24
+Feb 5 Ps 35, Gen 32, 2 Chr 9, Acts 1
+Feb 6 Ps 36, Gen 33, 2 Chr 10, Acts 2
+Feb 7 Ps 37, Gen 34, 2 Chr 11, Acts 3:1‐4:31
+Feb 8 Ps 38, Gen 35, 2 Chr 12, Acts 4:32‐6:7
+Feb 9 Ps 39, Gen 36, 2 Chr 13, Acts 6:8‐7:60
+Feb 10 Ps 40, Gen 37, 2 Chr 14, Acts 8
+Feb 11 Ps 41, Gen 38, 2 Chr 15, Acts 9:1‐31
+Feb 12 Ps 42‐43, Gen 39, 2 Chr 16,
+Acts 9:32‐43
+Feb 13 Ps 44, Gen 40, 2 Chr 17,
+Acts 10:1‐11:18
+Feb 14 Ps 45, Gen 41:1‐36, 2 Chr 18:1‐19:3,
+Acts 11:19‐30
+Feb 15 Ps 46, Gen 41:37‐57, 2 Chr 19:4‐11,
+Acts 12
+Feb 16 Ps 47, Gen 42, 2 Chr 20, Acts 13‐14
+Feb 17 Ps 48, Gen 43, 2 Chr 21, Acts 15:1‐35
+Feb 18 Ps 49, Gen 44, 2 Chr 22,
+Acts 15:36‐17:15
+Feb 19 Ps 50, Gen 45, 2 Chr 23, Acts 17:16‐34
+Feb 20 Ps 51, Gen 46:1‐47:12, 2 Chr 24,
+Acts 18:1‐22
+Feb 21 Ps 52, Gen 47:13‐26, 2 Chr 25,
+Acts 18:23‐19:22
+Feb 22 Ps 53, Gen 47:27‐48:22, 2 Chr 26,
+Acts 19:23‐20:16
+Feb 23 Ps 54, Gen 49, 2 Chr 27,
+Acts 20:17‐21:16
+Feb 24 Ps 55, Gen 50:1‐14, 2 Chr 28,
+Acts 21:17 ‐23:11
+Feb 25 Ps 56, Gen 50:15‐26, 2 Chr 29,
+Acts 23:12‐24:27
+Feb 26 Ps 57, Ex 1:1‐21, 2 Chr 30, Acts 25‐26
+Feb 27 Ps 58, Ex 1:22‐2:22, 2 Chr 31,
+Acts 27:1‐28:15
+Feb 28 Ps 59, Ex 2:23‐3:22, 2 Chr 32,
+Acts 28:16‐31
+Mar 1 Ps 60, Ex 4, 2 Chr 33, Rom 1:1‐17
+Mar 2 Ps 61, Ex 5:1‐6:9, 2 Chr 34,
+Rom 1:18‐32
+Mar 3 Ps 62, Ex 6:10‐7:13, 2 Chr 35:1‐19,
+Rom 2:1‐16
+Mar 4 Ps 63, Ex 7:14‐8:19, 2 Chr 35:20‐27,
+Rom 2:17‐3:8
+Mar 5 Ps 64, Ex 8:20‐9:12, 2 Chr 36,
+Rom 3:9‐20
+Mar 6 Ps 65, Ex 9:13‐10:29, Ezra 1,
+Rom 3:21‐31
+Mar 7 Ps 66, Ex 11:1‐12:30, Ezra 2, Rom 4
+Mar 8 Ps 67, Ex 12:31‐13:22, Ezra 3,
+Rom 5:1‐11
+Mar 9 Ps 68, Ex 14, Ezra 4, Rom 5:12‐21
+Mar 10 Ps 69, Ex 15:1‐21, Ezra 5, Rom 6
+Mar 11 Ps 70, Ex 15:22‐16:36, Ezra 6, Rom 7
+Mar 12 Ps 71, Ex 17, Ezra 7, Rom 8:1‐17
+Mar 13 Ps 72, Ex 18, Ezra 8, Rom 8:18‐39
+Mar 14 Ps 73, Ex 19, Ezra 9, Rom 9:1‐29
+Mar 15 Ps 74, Ex 20:1‐17, Ezra 10,
+Rom 9:30‐10:21
+Mar 16 Ps 75, Ex 20:18‐21:11, Neh 1, Rom 11
+Mar 17 Ps 76, Ex 21:12‐22:15, Neh 2, Rom 12
+Mar 18 Ps 77, Ex 22:16‐23:9, Neh 3, Rom 13
+Mar 19 Ps 78, Ex 23:10‐33, Neh 4, Rom 14
+Mar 20 Ps 79, Ex 24, Neh 5, Rom 15:1‐13
+Mar 21 Ps 80, Ex 25, Neh 6, Rom 15:14‐33
+Mar 22 Ps 81, Ex 26, Neh 7, Rom 16
+Mar 23 Ps 82, Ex 27:1‐19, Neh 8, 1 Cor 1:1‐17
+Mar 24 Ps 83, Ex 27:20‐28:43, Neh 9,
+1 Cor 1:18‐31
+Mar 25 Ps 84, Ex 29, Neh 10, 1 Cor 2
+Mar 26 Ps 85, Ex 30‐31, Neh 11:1‐12:26,
+1 Cor 3
+Mar 27 Ps 86, Ex 32, Neh 12:27‐47, 1 Cor 4
+Mar 28 Ps 87, Ex 33, Neh 13, 1 Cor 5
+Mar 29 Ps 88, Ex 34, Est 1, 1 Cor 6
+Mar 30 Ps 89, Ex 35:1‐29, Est 2, 1 Cor 7
+Mar 31 Ps 90, Ex 35:30‐36:38, Est 3, 1 Cor 8
+Apr 1 Ps 91, Ex 37, Est 4, 1 Cor 9
+Apr 2 Ps 92, Ex 38, Est 5, 1 Cor 10:1‐11:1
+Apr 3 Ps 93, Ex 39, Est 6, 1 Cor 11:2‐34
+Apr 4 Ps 94, Ex 40, Est 7, 1 Cor 12
+Apr 5 Ps 95, Lev 1, Est 8, 1 Cor 13
+Apr 6 Ps 96, Lev 2, Est 9‐10, 1 Cor 14
+Apr 7 Ps 97, Lev 3, Isa 1, 1 Cor 15
+Apr 8 Ps 98, Lev 4:1‐5:13, Isa 2, 1 Cor 16
+Apr 9 Ps 99, Lev 5:14‐6:7, Isa 3‐4,
+2 Cor 1:1‐11
+Apr 10 Ps 100, Lev 6:8‐7:38, Isa 5,
+2 Cor 1:12‐2:11
+Apr 11 Ps 101, Lev 8, Isa 6, 2 Cor 2:12‐3:18
+Apr 12 Ps 102, Lev 9, Isa 7‐8, 2 Cor 4:1‐5:10
+Apr 13 Ps 103, Lev 10, Isa 9:1‐7,
+2 Cor 5:11‐6:10
+Apr 14 Ps 104, Lev 11, Isa 9:8‐10:34,
+2 Cor 6:11‐7:16
+Apr 15 Ps 105, Lev 12, Isa 11‐12, 2 Cor 8‐9
+Apr 16 Ps 106, Lev 13, Isa 13‐14,
+2 Cor 10:1‐12
+Apr 17 Ps 107, Lev 14:1‐32, Isa 15‐16, 2 Cor
+10:13‐12:13
+Apr 18 Ps 108, Lev 14:33‐57, Isa 17‐18,
+2 Cor 12:14‐13:14
+Apr 19 Ps 109, Lev 15, Isa 19‐20, Gal 1:1‐10
+Apr 20 Ps 110, Lev 16, Isa 21, Gal 1:11‐24
+Apr 21 Ps 111, Lev 17, Isa 22, Gal 2
+Apr 22 Ps 112, Lev 18, Isa 23, Gal 3
+Apr 23 Ps 113, Lev 19, Isa 24, Gal 4
+Apr 24 Ps 114, Lev 20, Isa 25, Gal 5
+Apr 25 Ps 115, Lev 21:1‐22:16, Isa 26‐27,
+Gal 6
+Apr 26 Ps 116, Lev 22:17‐33, Isa 28, Eph 1
+Apr 27 Ps 117, Lev 23, Isa 29:1‐30:17, Eph 2
+Apr 28 Ps 118, Lev 24, Isa 30:18‐32:20, Eph 3
+Apr 29 Ps 119:1‐88, Lev 25, Isa 33‐34,
+Eph 4:1‐16
+Apr 30 Ps 119:89‐176, Lev 26, Isa 35,
+Eph 4:17‐32
+May 1 Ps 120, Lev 27, Isa 36‐37, Eph 5:1‐21
+May 2 Ps 121, Num 1, Isa 38, Eph 5:22‐6:9
+May 3 Ps 122, Num 2, Isa 39, Eph 6:10‐24
+May 4 Ps 123, Num 3‐4, Isa 40, Phil 1:1‐26
+May 5 Ps 124, Num 5, Isa 41, Phil 1:27‐2:11
+May 6 Ps 125, Num 6, Isa 42, Phil 2:12‐30
+May 7 Ps 126, Num 7, Isa 43:1‐44:5,
+Phil 3:1‐4:1
+May 8 Ps 127, Num 8, Isa 44:6‐28, Phil 4:2‐23
+May 9 Ps 128, Num 9:1‐14, Isa 45, Col 1:1‐20
+May 10 Ps 129, Num 9:15‐10:10, Isa 46‐47,
+Col 1:21‐2:5
+May 11 Ps 130, Num 10:11‐36, Isa 48‐49,
+Col 2:6‐23
+May 12 Ps 131, Num 11, Isa 50, Col 3:1‐17
+May 13 Ps 132, Num 12, Isa 51:1‐52:12,
+Col 3:18‐4:18
+May 14 Ps 133, Num 13‐14, Isa 52:13‐53:12,
+1 Thess 1
+May 15 Ps 134, Num 15, Isa 54,
+1 Thess 2:1‐16
+May 16 Ps 135, Num 16‐17, Isa 55, 1 Thess
+2:17‐3:13
+May 17 Ps 136, Num 18‐19, Isa 56‐57,
+1 Thess 4:1‐12
+May 18 Ps 137, Num 20‐21, Isa 58,
+1 Thess 4:13‐5:11
+May 19 Ps 138, Num 22, Isa 59,
+1 Thess 5:12‐22
+May 20 Ps 139, Num 23‐24, Isa 60,
+1 Thess 5:23‐28
+May 21 Ps 140, Num 25, Isa 61‐62,
+2 Thess 1
+May 22 Ps 141, Num 26, Isa 63‐64,
+2 Thess 2:1‐12
+May 23 Ps 142, Num 27, Isa 65,
+2 Thess 2:13‐3:5
+May 24 Ps 143, Num 28‐29, Isa 66,
+2 Thess 3:6‐18
+May 25 Ps 144, Num 30, Obad 1‐14, 1 Tim 1
+May 26 Ps 145, Num 31, Obad 15‐21, 1 Tim 2
+May 27 Ps 146, Num 32, Joel 1, 1 Tim 3
+May 28 Ps 147, Num 33:1‐49, Joel 2:1‐17,
+1 Tim 4
+May 29 Ps 148, Num 33:50‐34:29,
+Joel 2:18‐27, 1 Tim 5:1‐6:2
+May 30 Ps 149, Num 35‐36, Joel 2:28‐3:21,
+1 Tim 6:3‐21
+May 31 Ps 150, Deut 1, Jonah 1, 2 Tim 1:1‐7
+Jun 1 Prov 1:1‐7, Deut 2, Jonah 2, 2 Tim 1:8‐
+18
+Jun 2 Prov 1:8‐19, Deut 3, Jonah 3, 2 Tim 2
+Jun 3 Prov 1:20‐33, Deut 4, Jonah 4, 2
+Tim 3:1‐9
+Jun 4 Prov 2, Deut 5, Hos 1:1‐2:1,
+2 Tim 3:10‐4:8
+Jun 5 Prov 3:1‐12, Deut 6, Hos 2:2‐23,
+2 Tim 4:9‐22
+Jun 6 Prov 3:13‐20, Deut 7, Hos 3,
+Titus 1:1‐4
+Jun 7 Prov 3:21‐35, Deut 8:1‐9:5, Hos 4‐5,
+Titus 1:5‐16
+Jun 8 Prov 4, Deut 9:6‐10:11, Hos 6‐7,
+Titus 2
+Jun 9 Prov 5, Deut 10:12‐11:32, Hos 8,
+Titus 3:1‐8a
+Jun 10 Prov 6:1‐19, Deut 12, Hos 9,
+Titus 3:8b‐11
+Jun 11 Prov 6:20‐35, Deut 13, Hos 10,
+Titus 3:12‐15
+Jun 12 Prov 7, Deut 14, Hos 11:1‐11, Phm 1‐3
+Jun 13 Prov 8, Deut 15:1‐18,
+Hos 11:12‐13:16, Phm 4‐7
+Jun 14 Prov 9, Deut 15:19‐16:17, Hos 14,
+Phm 8‐22
+Jun 15 Prov 10, Deut 16:18‐17:20,
+Amos 1:1‐2:5, Phm 23‐25
+Jun 16 Prov 11‐12, Deut 18, Amos 2:6‐16,
+Matt 1:1‐17
+Jun 17 Prov 13‐14, Deut 19, Amos 3,
+Matt 1:18‐2:12
+Jun 18 Prov 15‐16, Deut 20, Amos 4,
+Matt 2:13‐23
+Jun 19 Prov 17‐18, Deut 21:1‐22:12, Amos 5,
+Matt 3
+Jun 20 Prov 19‐20, Deut 22:13‐30, Amos 6,
+Matt 4:1‐11
+Jun 21 Prov 21‐22, Deut 23:1‐14, Amos 7‐8,
+Matt 4:12‐25
+Jun 22 Prov 23‐24, Deut 23:15‐25:19,
+Amos 9, Matt 5:1‐16
+Jun 23 Prov 25‐26, Deut 26, Mic 1‐2,
+Matt 5:17‐48
+Jun 24 Prov 27‐28, Deut 27, Mic 3,
+Matt 6:1‐18
+Jun 25 Prov 29, Deut 28:1‐14, Mic 4,
+Matt 6:19‐24
+Jun 26 Prov 30:1‐31:9, Deut 28:15‐68, Mic 5,
+Matt 6:25‐34
+Jun 27 Prov 31:10‐31, Deut 29:1‐30:10,
+Mic 6, Matt 7:1‐12
+Jun 28 Eccl 1:1‐3, Deut 30:11‐20, Mic 7:1‐13,
+Matt 7:13‐29
+Jun 29 Eccl 1:4‐11, Deut 31:1‐29,
+Mic 7:14‐20, Matt 8
+Jun 30 Eccl 1:12‐18, Deut 31:30‐32:47,
+Nahum 1, Matt 9
+Jul 1 Eccl 2:1‐11, Deut 32:48‐33:29,
+Nahum 2:1‐3:4, Matt 10
+Jul 2 Eccl 2:12‐17, Deut 34, Nahum 3:5‐19,
+Matt 11
+Jul 3 Eccl 2:18‐23, Josh 1, Zeph 1:1‐2:3,
+Matt 12
+Jul 4 Eccl 2:24‐26, Josh 2, Zeph 2:4‐15,
+Matt 13
+Jul 5 Eccl 3:1‐8, Josh 3, Zeph 3:1‐8, Matt 14
+Jul 6 Eccl 3:9‐22, Josh 4, Zeph 3:9‐20,
+Matt 15
+Jul 7 Eccl 4, Josh 5, Jer 1:1‐10, Matt 16
+Jul 8 Eccl 5:1‐7, Josh 6, Jer 1:11‐19, Matt 17
+Jul 9 Eccl 5:8‐17, Josh 7, Jer 2:1‐3:5,
+Matt 18
+Jul 10 Eccl 5:18‐20, Josh 8, Jer 3:6‐4:4,
+Matt 19:1‐20:16
+Jul 11 Eccl 6, Josh 9, Jer 4:5‐31,
+Matt 20:17‐21:11
+Jul 12 Eccl 7:1‐14, Josh 10, Jer 5,
+Matt 21:12‐27
+Jul 13 Eccl 7:15‐29, Josh 11‐12, Jer 6,
+Matt 21:28‐22:14
+Jul 14 Eccl 8, Josh 13‐14, Jer 7:1‐8:3,
+Matt 22:15‐46
+Jul 15 Eccl 9:1‐10, Josh 15, Jer 8:4‐9:22,
+Matt 23
+Jul 16 Eccl 9:11‐18, Josh 16‐17, Jer 9:23‐
+10:25, Matt 24
+Jul 17 Eccl 10, Josh 18‐19, Jer 11:1‐17,
+Matt 25
+Jul 18 Eccl 11:1‐8, Josh 20, Jer 11:18‐12:17,
+Matt 26:1‐29
+Jul 19 Eccl 11:9‐12:8, Josh 21, Jer 13,
+Matt 26:30‐75
+Jul 20 Eccl 12:9‐14, Josh 22, Jer 14:1‐15:9,
+Matt 27:1‐26
+Jul 21 Song 1:1‐8, Josh 23‐24,
+Jer 15:10‐16:21, Matt 27:27‐66
+Jul 22 Song 1:9‐2:7, Judg 1, Jer 17, Matt 28
+Jul 23 Song 2:8‐17, Judg 2:1‐3:6, Jer 18,
+Heb 1
+Jul 24 Song 3, Judg 3:7‐31, Jer 19, Heb 2
+Jul 25 Song 4:1‐8, Judg 4, Jer 20, Heb 3:1‐6
+Jul 26 Song 4:9‐5:1, Judg 5, Jer 21,
+Heb 3:7‐4:13
+Jul 27 Song 5:2‐9, Judg 6, Jer 22:1‐23:8,
+Heb 4:14‐5:10
+Jul 28 Song 5:10‐6:3, Judg 7, Jer 23:9‐40,
+Heb 5:11‐6:20
+Jul 29 Song 6:4‐12, Judg 8, Jer 24, Heb 7
+Jul 30 Song 6:13‐7:9, Judg 9, Jer 25:1‐14,
+Heb 8:1‐9:10
+Jul 31 Song 7:10‐13, Judg 10:1‐11:3,
+Jer 25:15‐38, Heb 9:11‐10:18
+Aug 1 Song 8:1‐7, Judg 11:4‐40, Jer 26,
+Heb 10:19‐39
+Aug 2 Song 8:8‐14, Judg 12, Jer 27‐28,
+Heb 11:1‐12:2
+Aug 3 Ps 1, Judg 13, Jer 29, Heb 12:3‐29
+Aug 4 Ps 2, Judg 14, Jer 30, Heb 13:1‐19
+Aug 5 Ps 3, Judg 15, Jer 31, Heb 13:20‐25
+Aug 6 Ps 4, Judg 16, Jer 32, Mark 1
+Aug 7 Ps 5, Judg 17, Jer 33, Mark 2‐3
+Aug 8 Ps 6, Judg 18, Jer 34, Mark 4:1‐34
+Aug 9 Ps 7, Judg 19, Jer 35, Mark 4:35‐5:43
+Aug 10 Ps 8, Judg 20, Jer 36, Mark 6
+Aug 11 Ps 9, Judg 21, Jer 37, Mark 7:1‐8:26
+Aug 12 Ps 10, Ruth 1, Jer 38, Mark 8:27‐9:50
+Aug 13 Ps 11, Ruth 2, Jer 39, Mark 10
+Aug 14 Ps 12, Ruth 3, Jer 40‐41, Mark 11
+Aug 15 Ps 13, Ruth 4, Jer 42‐43, Mark 12
+Aug 16 Ps 14, 1 Sam 1:1‐2:11, Jer 44‐45,
+Mark 13
+Aug 17 Ps 15, 1 Sam 2:12‐36, Jer 46‐47,
+Mark 14
+Aug 18 Ps 16, 1 Sam 3, Jer 48, Mark 15
+Aug 19 Ps 17, 1 Sam 4, Jer 49, Mark 16
+Aug 20 Ps 18, 1 Sam 5:1‐7:2, Jer 50,
+1 Pet 1:1‐12
+Aug 21 Ps 19, 1 Sam 7:3‐17, Jer 51,
+1 Pet 1:13‐2:3
+Aug 22 Ps 20, 1 Sam 8, Jer 52, 1 Pet 2:4‐10
+Aug 23 Ps 21, 1 Sam 9:1‐10:16, Lam 1,
+1 Pet 2:11‐3:12
+Aug 24 Ps 22, 1 Sam 10:17‐11:15, Lam 2,
+1 Pet 3:13‐4:19
+Aug 25 Ps 23, 1 Sam 12, Lam 3, 1 Pet 5
+Aug 26 Ps 24, 1 Sam 13, Lam 4, 2 Pet 1:1‐11
+Aug 27 Ps 25, 1 Sam 14, Lam 5, 2 Pet 1:12‐21
+Aug 28 Ps 26, 1 Sam 15, Hab 1:1‐11, 2 Pet 2
+Aug 29 Ps 27, 1 Sam 16, Hab 1:12‐2:20,
+2 Pet 3
+Aug 30 Ps 28, 1 Sam 17, Hab 3, Luke 1:1‐25
+Aug 31 Ps 29, 1 Sam 18, Dan 1, Luke 1:26‐56
+Sep 1 Ps 30, 1 Sam 19, Dan 2, Luke 1:57‐80
+Sep 2 Ps 31, 1 Sam 20, Dan 3, Luke 2:1‐21
+Sep 3 Ps 32, 1 Sam 21‐22, Dan 4,
+Luke 2:22‐52
+Sep 4 Ps 33, 1 Sam 23‐24, Dan 5,
+Luke 3:1‐22
+Sep 5 Ps 34, 1 Sam 25, Dan 6, Luke 3:23‐4:13
+Sep 6 Ps 35, 1 Sam 26, Dan 7, Luke 4:14‐44
+Sep 7 Ps 36, 1 Sam 27, Dan 8, Luke 5:1‐6:16
+Sep 8 Ps 37, 1 Sam 28, Dan 9, Luke 6:17‐49
+Sep 9 Ps 38, 1 Sam 29‐30, Dan 10:1‐11:1,
+Luke 7:1‐35
+Sep 10 Ps 39, 1 Sam 31, Dan 11:2‐45,
+Luke 7:36‐8:3
+Sep 11 Ps 40, 2 Sam 1, Dan 12, Luke 8:4‐21
+Sep 12 Ps 41, 2 Sam 2, Ezek 1, Luke 8:22‐56
+Sep 13 Ps 42‐43, 2 Sam 3, Ezek 2‐3,
+Luke 9:1‐50
+Sep 14 Ps 44, 2 Sam 4, Ezek 4:1‐5:4,
+Luke 9:51‐10:24
+Sep 15 Ps 45, 2 Sam 5, Ezek 5:5‐17,
+Luke 10:25‐42
+Sep 16 Ps 46, 2 Sam 6, Ezek 6, Luke 11:1‐36
+Sep 17 Ps 47, 2 Sam 7, Ezek 7,
+Luke 11:37‐12:12
+Sep 18 Ps 48, 2 Sam 8, Ezek 8, Luke 12:13‐48
+Sep 19 Ps 49, 2 Sam 9, Ezek 9,
+Luke 12:49‐13:9
+Sep 20 Ps 50, 2 Sam 10, Ezek 10:1‐11:13,
+Luke 13:10‐35
+Sep 21 Ps 51, 2 Sam 11, Ezek 11:14‐25,
+Luke 14
+Sep 22 Ps 52, 2 Sam 12, Ezek 12, Luke 15
+Sep 23 Ps 53, 2 Sam 13, Ezek 13,
+Luke 16:1‐17:10
+Sep 24 Ps 54, 2 Sam 14:1‐24, Ezek 14‐15,
+Luke 17:11‐37
+Sep 25 Ps 55, 2 Sam 14:25‐15:12, Ezek 16,
+Luke 18:1‐30
+Sep 26 Ps 56, 2 Sam 15:13‐16:14, Ezek 17,
+Luke 18:31‐19:27
+Sep 27 Ps 57, 2 Sam 16:15‐17:23, Ezek 18,
+Luke 19:28‐46
+Sep 28 Ps 58, 2 Sam 17:24‐18:33, Ezek 19,
+Luke 19:47‐20:44
+Sep 29 Ps 59, 2 Sam 19, Ezek 20,
+Luke 20:45‐21:38
+Sep 30 Ps 60, 2 Sam 20, Ezek 21, Luke 22:1‐46
+Oct 1 Ps 61, 2 Sam 21, Ezek 22,
+Luke 22:47‐23:25
+Oct 2 Ps 62, 2 Sam 22:1‐23:7, Ezek 23,
+Luke 23:26‐56
+Oct 3 Ps 63, 2 Sam 23:8‐39, Ezek 24, Luke 24
+Oct 4 Ps 64, 2 Sam 24, Ezek 25, Rom 1:1‐17
+Oct 5 Ps 65, 1 Kgs 1:1‐27, Ezek 26,
+Rom 1:18‐32
+Oct 6 Ps 66, 1 Kgs 1:28‐53, Ezek 27,
+Rom 2:1‐16
+Oct 7 Ps 67, 1 Kgs 2, Ezek 28, Rom 2:17‐3:8
+Oct 8 Ps 68, 1 Kgs 3, Ezek 29‐30, Rom 3:9‐20
+Oct 9 Ps 69, 1 Kgs 4, Ezek 31, Rom 3:21‐31
+Oct 10 Ps 70, 1 Kgs 5, Ezek 32, Rom 4
+Oct 11 Ps 71, 1 Kgs 6, Ezek 33, Rom 5:1‐11
+Oct 12 Ps 72, 1 Kgs 7, Ezek 34, Rom 5:12‐21
+Oct 13 Ps 73, 1 Kgs 8:1‐21, Ezek 35, Rom 6
+Oct 14 Ps 74, 1 Kgs 8:22‐66, Ezek 36, Rom 7
+Oct 15 Ps 75, 1 Kgs 9:1‐9, Ezek 37,
+Rom 8:1‐17
+Oct 16 Ps 76, 1 Kgs 9:10‐10:29, Ezek 38,
+Rom 8:18‐39
+Oct 17 Ps 77, 1 Kgs 11, Ezek 39, Rom 9:1‐29
+Oct 18 Ps 78, 1 Kgs 12:1‐15, Ezek 40,
+Rom 9:30‐10:21
+Oct 19 Ps 79, 1 Kgs 12:16‐33, Ezek 41‐42,
+Rom 11
+Oct 20 Ps 80, 1 Kgs 13, Ezek 43, Rom 12
+Oct 21 Ps 81, 1 Kgs 14:1‐20, Ezek 44, Rom 13
+Oct 22 Ps 82, 1 Kgs 14:21‐15:24, Ezek 45,
+Rom 14
+Oct 23 Ps 83, 1 Kgs 15:25‐16:34, Ezek 46,
+Rom 15:1‐13
+Oct 24 Ps 84, 1 Kgs 17, Ezek 47:1‐12,
+Rom 15:14‐33
+Oct 25 Ps 85, 1 Kgs 18:1‐19,
+Ezek 47:13‐48:35, Rom 16
+Oct 26 Ps 86, 1 Kgs 18:20‐46, Hag 1, Jas 1
+Oct 27 Ps 87, 1 Kgs 19, Hag 2, Jas 2:1‐13
+Oct 28 Ps 88, 1 Kgs 20, Zech 1:1‐17,
+Jas 2:14‐26
+Oct 29 Ps 89, 1 Kgs 21, Zech 1:18‐2:13,
+Jas 3:1‐12
+Oct 30 Ps 90, 1 Kgs 22:1‐40, Zech 3,
+Jas 3:13‐18
+Oct 31 Ps 91, 1 Kgs 22:41‐53, Zech 4,
+Jas 4:1‐10
+Nov 1 Ps 92, 2 Kgs 1, Zech 5, Jas 4:11‐5:12
+Nov 2 Ps 93, 2 Kgs 2, Zech 6, Jas 5:13‐20
+Nov 3 Ps 94, 2 Kgs 3, Zech 7, John 1:1‐18
+Nov 4 Ps 95, 2 Kgs 4, Zech 8, John 1:19‐51
+Nov 5 Ps 96, 2 Kgs 5, Zech 9, John 2
+Nov 6 Ps 97, 2 Kgs 6:1‐23, Zech 10,
+John 3:1‐21
+Nov 7 Ps 98, 2 Kgs 6:24‐7:20, Zech 11,
+John 3:22‐36
+Nov 8 Ps 99, 2 Kgs 8, Zech 12‐13, John 4:1‐42
+Nov 9 Ps 100, 2 Kgs 9, Zech 14,
+John 4:43‐5:18
+Nov 10 Ps 101, 2 Kgs 10, Mal 1:1‐2:9,
+John 5:19‐47
+Nov 11 Ps 102, 2 Kgs 11, Mal 2:10‐17,
+John 6:1‐21
+Nov 12 Ps 103, 2 Kgs 12, Mal 3:1‐12,
+John 6:22‐71
+Nov 13 Ps 104, 2 Kgs 13, Mal 3:13‐4:6, John 7
+Nov 14 Ps 105, 2 Kgs 14:1‐22, Isa 1, John 8
+Nov 15 Ps 106, 2 Kgs 14:23‐15:38, Isa 2,
+John 9
+Nov 16 Ps 107, 2 Kgs 16, Isa 3‐4, John 10:1‐18
+Nov 17 Ps 108, 2 Kgs 17:1‐23, Isa 5,
+John 10:19‐42
+Nov 18 Ps 109, 2 Kgs 17:24‐41, Isa 6,
+John 11:1‐54
+Nov 19 Ps 110, 2 Kgs 18, Isa 7‐8,
+John 11:55‐12:19
+Nov 20 Ps 111, 2 Kgs 19, Isa 9:1‐7,
+John 12:20‐50
+Nov 21 Ps 112, 2 Kgs 20, Isa 9:8‐10:34,
+John 13
+Nov 22 Ps 113, 2 Kgs 21, Isa 11‐12, John 14
+Nov 23 Ps 114, 2 Kgs 22, Isa 13‐14,
+John 15:1‐17
+Nov 24 Ps 115, 2 Kgs 23:1‐30, Isa 15‐16,
+John 15:18‐16:15
+Nov 25 Ps 116, 2 Kgs 23:31‐24:17, Isa 17‐18,
+John 16:16‐33
+Nov 26 Ps 117, 2 Kgs 24:18‐25:21, Isa 19‐20,
+John 17
+Nov 27 Ps 118, 2 Kgs 25:22‐30, Isa 21,
+John 18:1‐27
+Nov 28 Ps 119:1‐88, Job 1, Isa 22,
+John 18:28‐19:16
+Nov 29 Ps 119:89‐176, Job 2, Isa 23,
+John 19:17‐42
+Nov 30 Ps 120, Job 3, Isa 24, John 20
+Dec 1 Ps 121, Job 4‐5, Isa 25, John 21
+Dec 2 Ps 122, Job 6‐7, Isa 26‐27, 1 Jn 1:1‐2:6
+Dec 3 Ps 123, Job 8, Isa 28, 1 Jn 2:7‐17
+Dec 4 Ps 124, Job 9‐10, Isa 29:1‐30:17,
+1 Jn 2:18‐3:3
+Dec 5 Ps 125, Job 11, Isa 30:18‐32:20,
+1 Jn 3:4‐24
+Dec 6 Ps 126, Job 12, Isa 33‐34, 1 Jn 4
+Dec 7 Ps 127, Job 13, Isa 35, 1 Jn 5
+Dec 8 Ps 128, Job 14, Isa 36‐37, 2 Jn
+Dec 9 Ps 129, Job 15, Isa 38, 3 Jn
+Dec 10 Ps 130, Job 16‐17, Isa 39, Jude
+Dec 11 Ps 131, Job 18, Isa 40, Rev 1
+Dec 12 Ps 132, Job 19, Isa 41, Rev 2
+Dec 13 Ps 133, Job 20, Isa 42, Rev 3
+Dec 14 Ps 134, Job 21, Isa 43:1‐44:5, Rev 4
+Dec 15 Ps 135, Job 22, Isa 44:6‐28, Rev 5
+Dec 16 Ps 136, Job 23‐24, Isa 45, Rev 6
+Dec 17 Ps 137, Job 25‐26, Isa 46‐47,
+Rev 7:1‐8:5
+Dec 18 Ps 138, Job 27, Isa 48‐49, Rev 8:6‐9:21
+Dec 19 Ps 139, Job 28, Isa 50, Rev 10
+Dec 20 Ps 140, Job 29, Isa 51:1‐52:12, Rev 11
+Dec 21 Ps 141, Job 30, Isa 52:13‐53:12, Rev 12
+Dec 22 Ps 142, Job 31, Isa 54, Rev 13
+Dec 23 Ps 143, Job 32, Isa 55, Rev 14
+Dec 24 Ps 144, Job 33, Isa 56‐57, Rev 15
+Dec 25 Ps 145, Job 34‐35, Isa 58, Rev 16
+Dec 26 Ps 146, Job 36:1‐21, Isa 59, Rev 17
+Dec 27 Ps 147, Job 36:22‐37:24, Isa 60, Rev 18
+Dec 28 Ps 148, Job 38, Isa 61‐62, Rev 19
+Dec 29 Ps 149, Job 39:1‐40:5, Isa 63‐64,
+Rev 20
+Dec 30 Ps 150, Job 40:6‐42:6, Isa 65,
+Rev 21:1‐22:5
+Dec 31 Ps 90, Job 42:7‐17, Isa 66, Rev 22:6‐21
