@@ -20,12 +20,6 @@ with open("new_list.txt", 'r', encoding="utf8") as file:
     #     if line
     pass
 
-
-sample_line_1 = "Jan 9 Ps 8, Gen 8:20‐9:19, 1 Chr 9,"
-sample_line_2 = "Jan 9 Ps 8, Gen 8:20‐9:19, 1 Chr 9, Luke 5:1‐6:16"
-
-
-
 def compare_first_15_char(line_1, line_2):
     """
     This function will compare first 15 characters of each line. Return True or False.
@@ -34,6 +28,20 @@ def compare_first_15_char(line_1, line_2):
         return True
     else:
         return False
-    
+
+#Experiment with variables
+sample_line_1 = "Jan 9 Ps 8, Gen 8:20‐9:19, 1 Chr 9,"
+sample_line_2 = "Jan 9 Ps 8, Gen 8:20‐9:19, 1 Chr 9, Luke 5:1‐6:16"
+sample_line_3 = "Jan 10 Ps 9, Gen 9:20‐10:32, 1 Chr 10,"
+
 is_same = compare_first_15_char(sample_line_1, sample_line_2)
-print(is_same)
+is_same_2 = compare_first_15_char(sample_line_1, sample_line_3)
+# print(is_same) #True
+# print(is_same_2) #False
+
+#Experiment using items in a list
+sample_line_list = [sample_line_1, sample_line_2, sample_line_3]
+list_is_same = compare_first_15_char(sample_line_list[0], sample_line_list[1])
+list_is_same_2 = compare_first_15_char(sample_line_list[0], sample_line_list[2])
+print(list_is_same) #True
+print(list_is_same_2) #False
