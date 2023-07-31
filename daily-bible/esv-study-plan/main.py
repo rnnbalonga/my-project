@@ -54,11 +54,11 @@ for i in range(0, len(raw_list)):
 
 print(clean_list[0])
 
-# with open("clean_list.txt", "w", encoding="utf-8") as clean_file:
-#     for i in range(0, len(clean_list)):   
-#         clean_file.write(f'{clean_list[i]} \n')
+with open("clean_list.txt", "w", encoding="utf-8") as clean_file:
+    for i in range(0, len(clean_list)):   
+        clean_file.write(f'{clean_list[i]} \n')
 
-# clean_file.close()
+clean_file.close()
 
 
 
