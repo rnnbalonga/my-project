@@ -16,6 +16,13 @@ def compare_str_length(prev_line, current_line):
     else:
         return prev_line
 
+def remove_first_two_words(line):
+    """
+    Remove first two words separated by " " in each line.
+    """
+    new_line = ' '.join(line.split()[2:])
+    return new_line
+
 with open("new_list.txt", 'r', encoding="utf8") as file:
     line_list = file.readlines()
     raw_list = []
@@ -23,12 +30,12 @@ with open("new_list.txt", 'r', encoding="utf8") as file:
         line = line_list[i].strip()
         raw_list.append(line)
     # print(len(raw_list))
+
+file.close()
         
 clean_list = []
 
-
-
-for i in range(0, len(raw_list) - 1):
+for i in range(0, len(raw_list)):
     if i == 0:
         clean_list.append(raw_list[i])
         # print(clean_list)
@@ -45,7 +52,14 @@ for i in range(0, len(raw_list) - 1):
         else:
             clean_list.append(current_line)
 
-print(len(clean_list)) 
+
+
+# with open("clean_list.txt", "w", encoding="utf-8") as clean_file:
+#     for i in range(0, len(clean_list)):   
+#         clean_file.write(f'{clean_list[i]} \n')
+
+# clean_file.close()
+
 
 
 ### CODE FOR FORMATTING (NOT NEEDED) ###
