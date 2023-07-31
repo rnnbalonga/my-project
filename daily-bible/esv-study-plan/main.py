@@ -27,7 +27,7 @@ with open("new_list.txt", 'r', encoding="utf8") as file:
     line_list = file.readlines()
     raw_list = []
     for i in range(len(line_list)):
-        line = line_list[i].strip()
+        line = remove_first_two_words(line_list[i].strip())
         raw_list.append(line)
     # print(len(raw_list))
 
@@ -52,7 +52,7 @@ for i in range(0, len(raw_list)):
         else:
             clean_list.append(current_line)
 
-
+print(clean_list[0])
 
 # with open("clean_list.txt", "w", encoding="utf-8") as clean_file:
 #     for i in range(0, len(clean_list)):   
