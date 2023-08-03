@@ -21,8 +21,8 @@ class VerseFetcher:
         return line
     
     def split_line(self, line):
+        """
+        Create a list of verses made from give_line method.
+        """
         verse = line.split(",")
         return verse
-
-test = VerseFetcher()
-print(test.split_line(test.give_line(0)))
