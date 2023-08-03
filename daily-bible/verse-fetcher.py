@@ -19,5 +19,10 @@ class VerseFetcher:
         """
         line = self.database[day]
         return line
+    
+    def split_line(self, line):
+        verse = line.split(",")
+        return verse
 
 test = VerseFetcher()
+print(test.split_line(test.give_line(0)))
