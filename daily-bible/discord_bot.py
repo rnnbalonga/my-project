@@ -12,4 +12,8 @@ async def on_ready():
     channel = bot.get_channel(CHANNEL_ID)
     await channel.send("Hello, I'm ready to roll out!")
 
+@bot.command()
+async def hello(ctx):
+    await ctx.send("Hello!")
+
 bot.run(TOKEN)
