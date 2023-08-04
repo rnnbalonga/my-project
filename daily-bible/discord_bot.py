@@ -1,8 +1,8 @@
 from discord.ext import commands
 import discord
 
-TOKEN = "MTEzNjgyNDk5NzcxNzk5OTYzNg.GO44FB.kWeBLVZR0PX_Ow3IT9s7PW5UA2cWp4r7G25_u0"
-CHANNEL_ID = 1136829338206077028
+TOKEN = "DISCORD_BOT_TOKEN"
+CHANNEL_ID = "CHANNEL_ID"
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -13,6 +13,7 @@ async def on_ready():
     await channel.send("Hello, I'm ready to roll out!")
 
 #Commands Samples
+#For each command, you need to add the line @bot.command()
 
 @bot.command()
 #Say Hello
