@@ -20,6 +20,7 @@ async def hello(ctx):
     await ctx.send("Hello!")
 
 #Add integers
+@bot.command()
 async def add(ctx, x, y):
     sum = int(x) + int(y)
     await ctx.send(f'{sum}')
