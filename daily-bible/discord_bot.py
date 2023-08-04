@@ -1,8 +1,9 @@
 from discord.ext import commands
 import discord
+import os
 
-TOKEN = "DISCORD_BOT_TOKEN"
-CHANNEL_ID = "CHANNEL_ID"
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+CHANNEL_ID = os.environ.get("CHANNEL_ID")
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
