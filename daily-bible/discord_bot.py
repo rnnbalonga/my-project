@@ -3,7 +3,7 @@ import discord
 import os
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
-CHANNEL_ID = os.environ.get("CHANNEL_ID")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
