@@ -2,14 +2,11 @@ from discord.ext import commands
 import discord
 import os
 
-TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
-CHANNEL_ID = os.environ.get("CHANNEL_ID")
-
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
-bot.run(TOKEN)
 
 @bot.event
 async def on_ready():
@@ -32,3 +29,4 @@ async def add(ctx, x, y):
     await ctx.send(f'{sum}')
 
     
+bot.run(TOKEN)
