@@ -2,6 +2,11 @@ from discord.ext import commands
 import discord
 import os
 
+<<<<<<< HEAD
+=======
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+CHANNEL_ID = os.environ.get("CHANNEL_ID")
+>>>>>>> parent of 80eea69 (Convert CHANNEL_ID into an int)
 
 class DiscordBot:
     def __init__(self):
