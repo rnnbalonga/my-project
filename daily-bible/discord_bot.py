@@ -2,37 +2,33 @@ from discord.ext import commands
 import discord
 import os
 
-<<<<<<< HEAD
-=======
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("CHANNEL_ID")
->>>>>>> parent of 80eea69 (Convert CHANNEL_ID into an int)
 
-class DiscordBot:
-    def __init__(self):
-        self.TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
-        self.CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
-        self.bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
-        self.bot.run(self.TOKEN)
 
-    @bot.event
-    async def on_ready(self):
-        print("Hello!")
-        channel = self.bot.get_channel(self.CHANNEL_ID)
-        await channel.send("Hello, I'm ready to roll out!")
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot.run(TOKEN)
 
-    #Commands Samples
-    #For each command, you need to add the line @bot.command()
+@bot.event
+async def on_ready():
+    print("Hello!")
+    channel = bot.get_channel(CHANNEL_ID)
+    await channel.send("Hello, I'm ready to roll out!")
 
-    @bot.command()
-    #Say Hello
-    async def hello(ctx):
-        await ctx.send("Hello!")
+#Commands Samples
+#For each command, you need to add the line @bot.command()
 
-    #Add integers
-    @bot.command()
-    async def add(ctx, x, y):
-        sum = int(x) + int(y)
-        await ctx.send(f'{sum}')
+@bot.command()
+#Say Hello
+async def hello(ctx):
+    await ctx.send("Hello!")
+
+#Add integers
+@bot.command()
+async def add(ctx, x, y):
+    sum = int(x) + int(y)
+    await ctx.send(f'{sum}')
 
     
