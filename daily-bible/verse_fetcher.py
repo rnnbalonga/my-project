@@ -26,3 +26,10 @@ class VerseFetcher:
         """
         verse = line.split(",")
         return verse
+
+verse = VerseFetcher()
+verse_line = verse.give_line(1)
+verses = verse.split_line(verse_line)
+for verse in verses:
+    print(verse)
+
