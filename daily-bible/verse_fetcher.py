@@ -20,16 +20,46 @@ class VerseFetcher:
         line = self.database[day]
         return line
     
-    def split_line(self, line):
+    def create_verse_line(self, line):
         """
         Create a list of verses made from give_line method.
         """
         verse = line.split(",")
         return verse
+    
+    def clean_verse_line(self, verse_list):
+        """
+        This is the final method.
+        """  
+        for i in range(len(verse_list)) :
+            if verse_list[i][0] == " ":
+                clean_verse = verse_list[i].lstrip()
+                verse_list[i] = clean_verse
+            else:
+                pass
+        print(verse_list) 
+
+
+
 
 verse = VerseFetcher()
-verse_line = verse.give_line(1)
-verses = verse.split_line(verse_line)
-for verse in verses:
-    print(verse)
+verse_line = ['Ps 1', ' Gen 2', ' 1 Chr 2', ' Luke 1:26‐56']
+
+# for verse in verse_line:
+#     if verse[0] == " ":
+#         new = verse.lstrip()
+#         print(new)
+#     else:
+#         print(verse)
+    
+# for i in range(len(verse_line)):
+#     if verse_line[i][0] == " ":
+#         new = verse_line[i].lstrip()
+#         verse_line[i] = new
+#     else:
+#         pass
+
+verse.clean_verse_line(verse_line)
+
+
 
