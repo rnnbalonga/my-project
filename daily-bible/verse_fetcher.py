@@ -50,17 +50,3 @@ class VerseFetcher:
 
         return clean_verse_line
 
-verse = VerseFetcher()
-
-# def sup(day):
-#     raw_line = verse.give_line(day)
-#     verse_line = verse.create_verse_line(raw_line)
-#     clean_line = verse.clean_verse_line(verse_line)
-#     print(clean_line)
-
-# sup(0)
-
-
-sew = verse.daily_verse(0)
-
-print(sew)
