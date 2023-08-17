@@ -29,7 +29,7 @@ class VerseFetcher:
     
     def clean_verse_line(self, verse_list):
         """
-        This is the final method.
+        Remove leading whitespace from verses.
         """  
         for i in range(len(verse_list)) :
             if verse_list[i][0] == " ":
@@ -37,29 +37,30 @@ class VerseFetcher:
                 verse_list[i] = clean_verse
             else:
                 pass
-        print(verse_list) 
 
+        return verse_list
+    
+    def daily_verse(self, day):
+        """
+        Final method to give verses for the day. Day of the year (integer from 0-364) is needed as input. Output will be a list of verses.
+        """
+        raw_line = self.give_line(day)
+        verse_line = self.create_verse_line(raw_line)
+        clean_verse_line = self.clean_verse_line(verse_line)
 
-
+        return clean_verse_line
 
 verse = VerseFetcher()
-verse_line = ['Ps 1', ' Gen 2', ' 1 Chr 2', ' Luke 1:26‐56']
 
-# for verse in verse_line:
-#     if verse[0] == " ":
-#         new = verse.lstrip()
-#         print(new)
-#     else:
-#         print(verse)
-    
-# for i in range(len(verse_line)):
-#     if verse_line[i][0] == " ":
-#         new = verse_line[i].lstrip()
-#         verse_line[i] = new
-#     else:
-#         pass
+# def sup(day):
+#     raw_line = verse.give_line(day)
+#     verse_line = verse.create_verse_line(raw_line)
+#     clean_line = verse.clean_verse_line(verse_line)
+#     print(clean_line)
 
-verse.clean_verse_line(verse_line)
+# sup(0)
 
 
+sew = verse.daily_verse(0)
 
+print(sew)
