@@ -14,9 +14,14 @@ class DayCounter:
         Manually sets the day
         """
         self.day = select_day
-        
+    
+    def print_day(self):
+        """
+        Prints the current day of the plan.
+        """
+        print(f"You are at day {self.day} of the study plan.")
 
 test = DayCounter()
 test.set_day(5)
 test.add_day()
-print(test.day)
+test.print_day()
