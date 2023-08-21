@@ -19,7 +19,7 @@ class DayCounter:
         """
         Prints the current day of the plan.
         """
-        print(f"You are at day {self.day} of the study plan.")
+        print(f"You are at ay {self.day} of the study plan.")
 
 test = DayCounter()
 test.set_day(5)
