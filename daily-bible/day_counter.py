@@ -4,10 +4,19 @@ class DayCounter:
         self.day = 0
 
     def add_day(self):
+        """
+        Add +1 to day
+        """
         self.day += 1
+
+    def set_day(self, select_day):
+        """
+        Manually sets the day
+        """
+        self.day = select_day
         
 
 test = DayCounter()
-print(test.day)
+test.set_day(5)
 test.add_day()
 print(test.day)
