@@ -22,19 +22,14 @@ driver.find_element(By.NAME, "quicksearch").send_keys("psa 1" )
 
 driver.find_element(By.XPATH, "/html/body/div[2]/div/section/div[1]/div/form/div[1]/div[2]/button").click()
 
+verse_ref = driver.find_element(By.CLASS_NAME, "dropdown-display-text").text
+verse = driver.find_element(By.CLASS_NAME, "passage-text" ).text
+print(verse)
+
+driver.quit()
+
 # Close the driver
 # driver.quit()
-
-
-
-
-
-
-
-
-
-
-
 
 # class Scraper:
 #     def __init__(self):
