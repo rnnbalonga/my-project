@@ -21,7 +21,3 @@ class DayCounter:
         """
         print(f"You are at ay {self.day} of the study plan.")
 
-test = DayCounter()
-test.set_day(5)
-test.add_day()
-test.print_day()
