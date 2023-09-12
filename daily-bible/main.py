@@ -3,7 +3,7 @@ from verse_fetcher import VerseFetcher
 from selenium.webdriver.common.by import By
 import schedule
 import time
-from scraper import Scraper
+
 
 # from discord_bot import DiscordBot
 
@@ -22,6 +22,3 @@ print(f"Current verse: {current_verse}")
 #     time.sleep(1)
 
 #Webscrape
-web_scraper = Scraper()
-web_scraper.driver.find_element(By.NAME, "quicksearch").clear()
-web_scraper.driver.find_element(By.NAME, "quicksearch").send_keys(f"{current_verse[0]}")
