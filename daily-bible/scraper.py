@@ -10,6 +10,7 @@ class WebScraper:
         options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), 
                                 options=options)
+        
     def scrape_verse(self, query):
     # Navigate to the url
         self.driver.get('https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/')
@@ -28,8 +29,5 @@ class WebScraper:
         #Get the verse
         verse = self.driver.find_element(By.CLASS_NAME, "passage-text" ).text
         print(verse)
-
+        #Closes Driver
         self.driver.quit()
-
-verse_scraper = WebScraper()
-verse_scraper.scrape_verse("Matt 1:1-20")
