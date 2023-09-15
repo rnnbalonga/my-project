@@ -1,8 +1,6 @@
 from day_counter import DayCounter
 from verse_fetcher import VerseFetcher
-from selenium.webdriver.common.by import By
-import schedule
-import time
+from scraper import WebScraper
 
 
 # from discord_bot import DiscordBot
@@ -10,15 +8,14 @@ import time
 user_day = DayCounter()
 user_verse = VerseFetcher()
 
+
 #Get user_verse list from user_day
 current_verse = user_verse.daily_verse(user_day.day)
-print(f"Current verse: {current_verse}")
+print(type(current_verse[0]))
 
-# #Call user_day.add_day() after 12AM
-# schedule.every().day.at("00:00").do(user_day.add_day)
+#Scrape verse from current_verse
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+#Test 1 verse
+scraper = WebScraper()
+scraper.scrape_verse(current_verse[0])
 
-#Webscrape
