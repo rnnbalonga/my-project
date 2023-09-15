@@ -15,7 +15,16 @@ print(type(current_verse[0]))
 
 #Scrape verse from current_verse
 
-#Test 1 verse
-scraper = WebScraper()
-scraper.scrape_verse(current_verse[0])
 
+scraper = WebScraper()
+
+#Test 1 verse
+# scraper.scrape_verse(current_verse[0])
+
+#Loop through all items in list
+#Consider saving the scraped verses into a variable which can be accessed later. Create a dictionary where book-chapter is the key and the passage is the value.
+#Consider showing a message in the console that {passage} has been saved.
+#Browser should only close after all passages have been successfully scraped
+
+# for verse in current_verse:
+#     scraper.scrape_verse(verse)
