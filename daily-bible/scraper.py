@@ -10,14 +10,15 @@ class WebScraper:
         options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), 
                                 options=options)
+    
+    def open_site(self):
+        # Navigate to the url
+        self.driver.get('https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/')
         
     def scrape_verse(self, query):
         """
         This function will scrape the verse from the website using a string 'query' as input.
         """
-    # Navigate to the url
-        self.driver.get('https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/')
-
         # Clear Text from the search bar
         self.driver.find_element(By.NAME, "quicksearch").clear()
 
@@ -31,6 +32,15 @@ class WebScraper:
         self.verse_ref = self.driver.find_element(By.CLASS_NAME, "dropdown-display-text").text
         #Get the verse
         verse = self.driver.find_element(By.CLASS_NAME, "passage-text" ).text
-        print(verse)
+
+        return verse
         #Closes Driver
+    
+    def quit(self):
+        """
+        Closes the browser
+        """
         self.driver.quit()
+
+
+
