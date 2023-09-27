@@ -12,6 +12,9 @@ class WebScraper:
                                 options=options)
         
     def scrape_verse(self, query):
+        """
+        This function will scrape the verse from the website using a string 'query' as input.
+        """
     # Navigate to the url
         self.driver.get('https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/')
 
