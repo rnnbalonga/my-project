@@ -25,6 +25,8 @@ scraper = WebScraper()
 # #Consider saving the scraped verses into a variable which can be accessed later. Create a list of dictionaries where book-chapter is the key and the passage is the value.
 current_day_output = []
 
+scraper.open_site()
+
 # #Loop through all items in list
 for verse in current_verse:
     current_verse_output = {}
