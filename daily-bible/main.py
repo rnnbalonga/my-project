@@ -12,8 +12,6 @@ user_verse = VerseFetcher()
 scraper = WebScraper()
 
 
-
-
 def scrape_verse():
     """
     Provide a list of dictionaries containing the reference & verses for the day.
@@ -48,36 +46,42 @@ def scrape_verse():
     else:
         pass
 
-#Discord Bot Settings
-TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+    return current_day_output
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
-
-
-@bot.event
-async def on_ready():
-    print("Hello!")
-    channel = bot.get_channel(CHANNEL_ID)
-    await channel.send("Hello, I'm ready to roll out!")
-
-#Commands Samples
-#For each command, you need to add the line @bot.command()
-
-@bot.command()
-#Say Hello
-async def hello(ctx):
-    await ctx.send("Hello!")
-
-#Add integers
-@bot.command()
-async def add(ctx, x, y):
-    sum = int(x) + int(y)
-    await ctx.send(f'{sum}')
-
+verse_list = scrape_verse()
+for verse in verse_list:
+    print(verse)
+    print("\n")
     
-bot.run(TOKEN)
+# #Discord Bot Settings
+# TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+# CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+
+# bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
-scrape_verse()
+# @bot.event
+# async def on_ready():
+#     print("Hello!")
+#     channel = bot.get_channel(CHANNEL_ID)
+#     await channel.send("Hello, I'm ready to roll out!")
+
+# #Commands Samples
+# #For each command, you need to add the line @bot.command()
+
+# @bot.command()
+# #Say Hello
+# async def hello(ctx):
+#     await ctx.send("Hello!")
+
+# #Add integers
+# @bot.command()
+# async def add(ctx, x, y):
+#     sum = int(x) + int(y)
+#     await ctx.send(f'{sum}')
+
+# bot.run(TOKEN)
+
+
+# scrape_verse()
 
