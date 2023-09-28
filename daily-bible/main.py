@@ -35,15 +35,20 @@ def scrape_verse():
     #Loop through all items in list
     current_day_output = [{'reference': verse, 'verse': scraper.scrape_verse(verse)} for verse in current_verse]
 
-    # for verse in current_verse:
-    #     current_verse_output = {}
-    #     current_verse_output['reference'] = verse
-    #     current_verse_output['verse'] = scraper.scrape_verse(verse)
-    #     current_day_output.append(current_verse_output)
-
     scraper.quit()
 
     return current_day_output
+
+def send_verse(send_verse_list):
+    """
+    Format the verses to be readable.
+    """
+    for message in send_verse_list:
+        print(f"{message['reference']}\n")
+        print(f"{message['verse']}\n")
+        print("--------------------------------- \n")
+
+send_verse(scrape_verse())
 
 # #Discord Bot Settings
 # TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
