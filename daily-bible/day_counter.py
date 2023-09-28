@@ -2,7 +2,7 @@ class DayCounter:
     # This class will calculate and track the day the user is in.
     def __init__(self):
         self.day = 0
-        self.origin_day = ""
+        self.origin_date = ""
 
     def add_day(self):
         """
