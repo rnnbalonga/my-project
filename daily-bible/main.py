@@ -28,6 +28,11 @@ def main ():
 
     current_day_output = [{'reference': verse, 'verse': scraper.scrape_verse(verse)} for verse in current_verse]
 
+    for output in current_day_output:
+        print(output['reference'])
+        print("\n")
+        print(output['verse'])
+        
     scraper.quit()
 
     print(current_day_output)
