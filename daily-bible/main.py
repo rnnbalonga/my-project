@@ -12,6 +12,15 @@ user_verse = VerseFetcher()
 scraper = WebScraper()
 
 
+#Call add_day method when current date is changed
+current_date = str(date.today())
+origin_date = user_day.origin_date
+
+if current_date != origin_date:
+    origin_date = current_date
+    user_day.add_day()
+
+
 def scrape_verse():
     """
     Provide a list of dictionaries containing the reference & verses for the day.
@@ -24,35 +33,18 @@ def scrape_verse():
     scraper.open_site()
 
     #Loop through all items in list
-    for verse in current_verse:
-        current_verse_output = {}
-        current_verse_output['reference'] = verse
-        current_verse_output['verse'] = scraper.scrape_verse(verse)
-        current_day_output.append(current_verse_output)
+    current_day_output = [{'reference': verse, 'verse': scraper.scrape_verse(verse)} for verse in current_verse]
+
+    # for verse in current_verse:
+    #     current_verse_output = {}
+    #     current_verse_output['reference'] = verse
+    #     current_verse_output['verse'] = scraper.scrape_verse(verse)
+    #     current_day_output.append(current_verse_output)
 
     scraper.quit()
 
-    for output in current_day_output:
-        print(output)
-        print("\n")
-
-    #Call add_day method when current date is changed
-    current_date = str(date.today())
-    origin_date = ""
-
-    if current_date != origin_date:
-        origin_date = current_date
-        user_day.add_day()
-    else:
-        pass
-
     return current_day_output
 
-verse_list = scrape_verse()
-for verse in verse_list:
-    print(verse)
-    print("\n")
-    
 # #Discord Bot Settings
 # TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
 # CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
@@ -81,7 +73,3 @@ for verse in verse_list:
 #     await ctx.send(f'{sum}')
 
 # bot.run(TOKEN)
-
-
-# scrape_verse()
-
