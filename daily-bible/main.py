@@ -2,13 +2,22 @@ from datetime import date
 from day_counter import DayCounter
 from verse_fetcher import VerseFetcher
 from scraper import WebScraper
+from discord.ext import commands
+import discord
+import os
+
 
 user_day = DayCounter()
 user_verse = VerseFetcher()
 scraper = WebScraper()
 
 
+
+
 def scrape_verse():
+    """
+    Provide a list of dictionaries containing the reference & verses for the day.
+    """
     current_verse = user_verse.daily_verse(user_day.day)
 
     #Consider saving the scraped verses into a variable which can be accessed later. Create a list of dictionaries where book-chapter is the key and the passage is the value.
@@ -38,6 +47,37 @@ def scrape_verse():
         user_day.add_day()
     else:
         pass
+
+#Discord Bot Settings
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+
+bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+
+
+@bot.event
+async def on_ready():
+    print("Hello!")
+    channel = bot.get_channel(CHANNEL_ID)
+    await channel.send("Hello, I'm ready to roll out!")
+
+#Commands Samples
+#For each command, you need to add the line @bot.command()
+
+@bot.command()
+#Say Hello
+async def hello(ctx):
+    await ctx.send("Hello!")
+
+#Add integers
+@bot.command()
+async def add(ctx, x, y):
+    sum = int(x) + int(y)
+    await ctx.send(f'{sum}')
+
+    
+bot.run(TOKEN)
+
 
 scrape_verse()
 
