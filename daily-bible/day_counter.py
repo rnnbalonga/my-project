@@ -2,7 +2,7 @@ class DayCounter:
     # This class will calculate and track the day the user is in.
     def __init__(self):
         self.day = 0
-        self.origin_date = self.get_origin_date("last_run_date.txt")
+        self.path = "last_run_date.txt"
 
     def add_day(self):
         """
@@ -22,37 +22,28 @@ class DayCounter:
         """
         print(f"You are at ay {self.day} of the study plan.")
     
-    def get_origin_date(self, path):
+    def get_origin_date(self):
         """
         Compare origin date with current date
         """
-        with open(path, 'r', encoding="utf-8") as file:
-            last_run_date = file.readline
+        with open(self.path, 'r', encoding="utf-8") as file:
+            last_run_date = file.read()
         
         return last_run_date
-        
+
     
-    def store_date(self, day, path):
+    def store_date(self, day):
         """
         Store the origin date in the last_run_date.txt file
         """
-        with open(path, 'w', encoding= "utf-8") as file:
+        with open(self.path, 'w', encoding= "utf-8") as file:
             file.write(day)
 
-from datetime import date
-
-user_day = DayCounter()
-
-current_date = str(date.today())
-
-if user_day.compare_date(current_date):
-    print("SONO MAMA")
-else:
-    print("OH WELL")
-# origin_date = user_day.origin_date
-
-# if current_date != origin_date:
-#     origin_date = current_date
-#     user_day.add_day()
-
-
+    def compare_dates(self, current_date, origin_date):
+        """
+        Compare current day to origin date. Store results in last_run_date.txt file.
+        """    
+        if current_date != origin_date:
+            True
+        else:
+            False
