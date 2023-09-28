@@ -43,7 +43,7 @@ class DayCounter:
         """
         Compare current day to origin date. Store results in last_run_date.txt file.
         """    
-        if current_date != origin_date:
+        if current_date == origin_date:
             True
         else:
             False
