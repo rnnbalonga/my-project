@@ -39,11 +39,4 @@ class DayCounter:
         with open(self.path, 'w', encoding= "utf-8") as file:
             file.write(day)
 
-    def compare_dates(self, current_date, origin_date):
-        """
-        Compare current day to origin date. Store results in last_run_date.txt file.
-        """    
-        if current_date == origin_date:
-            True
-        else:
-            False
+    
