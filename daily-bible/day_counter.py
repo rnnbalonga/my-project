@@ -3,6 +3,7 @@ class DayCounter:
     def __init__(self):
         self.day = 0
         self.origin_date = ""
+        self.ref_file = "last_run_date.txt"
 
     def add_day(self):
         """
@@ -21,4 +22,13 @@ class DayCounter:
         Prints the current day of the plan.
         """
         print(f"You are at ay {self.day} of the study plan.")
+    
+    def store_date(self, day, path):
+        """
+        Store the origin date in the last_run_date.txt file
+        """
+        with open(path, 'w', encoding= "utf-8") as file:
+            file.write(day)
+
+        
 
