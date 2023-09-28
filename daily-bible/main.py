@@ -7,7 +7,6 @@ user_day = DayCounter()
 user_verse = VerseFetcher()
 scraper = WebScraper()
 
-# Get user_verse list from user_day
 
 def scrape_verse():
     current_verse = user_verse.daily_verse(user_day.day)
@@ -41,3 +40,4 @@ def scrape_verse():
         pass
 
 scrape_verse()
+
