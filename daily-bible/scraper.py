@@ -61,9 +61,9 @@ class WebScraper:
                 x = item['reference']
                 y = item['verse']
 
-                file.write(f'{x}\n')
-                file.write(f'{y}')
-                file.write("\n--------------------------- \n\n")
+                file.write(f"{x}\n\n")
+                file.write(f"{y}")
+                file.write("\n\n---------------------------\n\n")
 
 
     def quit(self):
