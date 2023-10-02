@@ -50,7 +50,7 @@ class WebScraper:
 
         self.quit()
 
-        return current_day_output
+        self.store_verse(current_day_output)
     
     def store_verse(self, verse_list):
         """
@@ -71,8 +71,6 @@ class WebScraper:
         Closes the browser
         """
         self.driver.quit()
-
-
 
 
 
