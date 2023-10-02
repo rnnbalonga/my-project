@@ -10,6 +10,7 @@ class WebScraper:
         options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), 
                                 options=options)
+        self.path = "today_verse.txt"
     
     def open_site(self):
         # Navigate to the url
@@ -35,12 +36,43 @@ class WebScraper:
 
         return verse
         #Closes Driver
+
+    def collect_output_verse(self, current_verse):
+        """
+        Takes a list of verses and scrapes them one by one. Returns a dictionary of reference and verses.
+        """
+        
+        current_day_output = []
+
+        self.open_site()
+
+        current_day_output = [{'reference': verse, 'verse': self.scrape_verse(verse)} for verse in current_verse]
+
+        self.quit()
+
+        return current_day_output
     
+    def store_verse(self, verse_list):
+        """
+        Store verse in a txt file for easy access
+        """
+        with open(self.path, 'w', encoding= "utf-8") as file:
+            for item in verse_list:
+                x = item['reference']
+                y = item['verse']
+
+                file.write(f'{x}\n')
+                file.write(f'{y}')
+                file.write("\n--------------------------- \n\n")
+
+
     def quit(self):
         """
         Closes the browser
         """
         self.driver.quit()
+
+
 
 
 
