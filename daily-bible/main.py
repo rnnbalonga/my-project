@@ -9,12 +9,11 @@ import discord
 import os
 
 
-user_day = DayCounter()
-user_verse = VerseFetcher()
-scraper = WebScraper()
-
-
 def main ():
+    user_day = DayCounter()
+    user_verse = VerseFetcher()
+    scraper = WebScraper()
+
     current_date = str(date.today())
     origin_date = user_day.get_origin_date()
 
@@ -28,11 +27,14 @@ def main ():
     else:
         pass
 
-def sched():
-    main()
+# def sched():
+#     main()
 
-schedule.every().day.at("00:00").do(sched)
+# schedule.every().day.at("00:00").do(sched)
 
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(60)
+
+
+main()
