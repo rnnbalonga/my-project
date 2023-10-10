@@ -24,8 +24,7 @@ def main ():
         #Scrape verse & store output in today_verse.txt
         current_verse = user_verse.daily_verse(user_day.day) #output -> list
         scraper.collect_output_verse(current_verse)
-    else:
-        pass
+   
 
 # def sched():
 #     main()
