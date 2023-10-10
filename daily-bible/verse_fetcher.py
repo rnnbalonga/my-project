@@ -10,22 +10,13 @@ class VerseFetcher:
         Fetch the items from clean_list.
         """
         with open (path, "r", encoding="utf-8") as file:
-            data = [line.strip() for line in file]
-        return data
+            return [line.strip() for line in file]
     
     def give_line(self, day):
-        """
-        Give the line that corresponds to the given day.
-        """
-        line = self.database[day]
-        return line
+        return self.database[day]
     
     def create_verse_line(self, line):
-        """
-        Create a list of verses made from give_line method.
-        """
-        verse = line.split(",")
-        return verse
+        return line.split(",")
     
     def clean_verse_line(self, verse_list):
         """
@@ -35,8 +26,6 @@ class VerseFetcher:
             if verse_list[i][0] == " ":
                 clean_verse = verse_list[i].lstrip()
                 verse_list[i] = clean_verse
-            else:
-                pass
 
         return verse_list
     
