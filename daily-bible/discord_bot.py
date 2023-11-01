@@ -7,6 +7,11 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
+#cogs
+
+def sample():
+    print("This is a sample")
+
 @bot.event
 async def on_ready():
     print("Hello!")
@@ -27,5 +32,11 @@ async def add(ctx, x, y):
     sum = int(x) + int(y)
     await ctx.send(f'{sum}')
 
+#Figure out a way to take a function as an input and execute that function with a keyword
+
+#List of commands
+#!today = give today's verse via main()
+#!setday = allows user to set the day of passage they want to read. 
+#
     
 bot.run(TOKEN)
