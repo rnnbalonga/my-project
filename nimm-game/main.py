@@ -26,13 +26,30 @@ def get_player_choice(player):
         except ValueError:
             print("Nope")
     if user_choice == 1 or user_choice == 2:
-                print("\n")
-                return user_choice
+            print("\n")
+            return user_choice
+    #Issue is it will only ask user to enter 1 or 2 just once. If the player insists on entering some other int, it will proceed to use that input.
+    #Need to find a solution.
     else:
-        user_choice = int(input("Please enter 1 or 2: "))
+        ask_again()
         print("\n")
         return user_choice
 
+def ask_again():
+    """
+    This function will repeat asking for a valid input from the player
+    """
+    while True:
+        user_choice = int(input("Please enter 1 or 2: "))
+        #Check if user_choice is an int or not.
+        try:
+            user_choice = int(user_choice)
+            break
+        except ValueError:
+            print("Nope")
+    while user_choice != 1 or user_choice != 2:
+        ask_again()
+    return user_choice
 
 
 def main():
