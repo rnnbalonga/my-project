@@ -49,6 +49,12 @@ def is_1_or_2(choice):
     else:
         return False
 
+def check_if_valid(choice):
+    if is_int(choice) and is_1_or_2(choice):
+        return True
+    else:
+        return False
+
 def ask_again():
     while True:
         player_choice = (input("Please enter 1 or 2: "))
@@ -78,6 +84,10 @@ def ask_again():
 #     print(f"Player {player} wins!")
         
 def main():
+    print(check_if_valid(3)) #expected answer False
+    print(check_if_valid('hey')) #expected answer False
+    print(check_if_valid(1)) #expect True
+    print(check_if_valid(2)) #expect True
  
  
 
