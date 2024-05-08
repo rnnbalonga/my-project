@@ -24,17 +24,17 @@ def switch_player(player):
     
     return player
 
-def get_player_choice():
+def get_player_choice(player):
+    """
+    This function will get the player's choice and check if it's a valid input.
+    """
     while True:
-        user_choice = int(input("Would you like to remove 1 or 2 stones? "))
+        user_choice = int(input(f"Player {player} would you like to remove 1 or 2 stones? "))
         print("\n")
         if user_choice == 1 or user_choice == 2:
             return user_choice
         else:
             print("Please select between 1 and 2.")
-
-
-
 
 def main():
     """
@@ -46,14 +46,15 @@ def main():
 
     while remaining_stones > 0:
         #Ask player how many stones to subtract
-        subtract = get_player_choice()
-        remaining_stones -= subtract
-        if remaining_stones > 0:
-            print(remaining_stones)
-        else:
-            pass
+        print(f'There are {remaining_stones} stones left.')
+        subtract = get_player_choice(player)
         #Substract input from remaining stones
-        #Print remaining stones
+        remaining_stones -= subtract
+        #Switch player
+        if player == 1:
+            player += 1
+        else:
+            player -= 1
     print("Game over.")
         
         
