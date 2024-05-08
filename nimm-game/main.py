@@ -13,28 +13,27 @@
 # Track if game has ended - game will end when remaining stones <= 0
 # 
 
-# def switch_player(player):
-#     """
-#     This function will swap the player.
-#     """
-#     if player == 1:
-#         player += 1
-#     else:
-#         player -= 1
-    
-#     return player
-
 def get_player_choice(player):
     """
-    This function will get the player's choice and check if it's a valid input.
+    This function will get the player's choice.
     """
     while True:
-        user_choice = int(input(f"Player {player} would you like to remove 1 or 2 stones? "))
+        user_choice = input(f"Player {player} would you like to remove 1 or 2 stones? ")
+        #Check if user_choice is an int or not.
+        try:
+            user_choice = int(user_choice)
+            break
+        except ValueError:
+            print("Nope")
+    if user_choice == 1 or user_choice == 2:
+                print("\n")
+                return user_choice
+    else:
+        user_choice = int(input("Please enter 1 or 2: "))
         print("\n")
-        if user_choice == 1 or user_choice == 2:
-            return user_choice
-        else:
-            print("Please select between 1 and 2.")
+        return user_choice
+
+
 
 def main():
     """
