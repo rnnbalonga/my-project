@@ -13,16 +13,16 @@
 # Track if game has ended - game will end when remaining stones <= 0
 # 
 
-def switch_player(player):
-    """
-    This function will swap the player.
-    """
-    if player == 1:
-        player += 1
-    else:
-        player -= 1
+# def switch_player(player):
+#     """
+#     This function will swap the player.
+#     """
+#     if player == 1:
+#         player += 1
+#     else:
+#         player -= 1
     
-    return player
+#     return player
 
 def get_player_choice(player):
     """
@@ -55,7 +55,7 @@ def main():
             player += 1
         else:
             player -= 1
-    print("Game over.")
+    print(f"Player {player} wins!")
         
         
  
