@@ -34,12 +34,11 @@ def is_int(choice):
     """
     Check if player's choice is an integer.
     """
-    try:
-        choice = int(choice)
-    except ValueError:
-        ask_again()
+    if type(choice) == int:
+        return True
     else:
-        return choice
+        return False
+
 
 def is_1_or_2(choice):
     """
@@ -47,6 +46,8 @@ def is_1_or_2(choice):
     """
     if choice == 1 or choice == 2:
         return True
+    else:
+        return False
 
 def ask_again():
     while True:
@@ -55,28 +56,29 @@ def ask_again():
         if player_choice == 1 or player_choice == 2:
             return player_choice
 
-def main():
-    """
-    You should write your code here. 
-    """
-    #Create starting variables based on requirements
-    remaining_stones = 20
-    player = 1
+# def main():
+#     """
+#     You should write your code here. 
+#     """
+#     #Create starting variables based on requirements
+#     remaining_stones = 20
+#     player = 1
 
-    while remaining_stones > 0:
-        #Ask player how many stones to subtract
-        print(f'There are {remaining_stones} stones left.')
-        subtract = get_player_choice(player)
-        #Substract input from remaining stones
-        remaining_stones -= subtract
-        #Switch player
-        if player == 1:
-            player += 1
-        else:
-            player -= 1
-    print(f"Player {player} wins!")
+#     while remaining_stones > 0:
+#         #Ask player how many stones to subtract
+#         print(f'There are {remaining_stones} stones left.')
+#         subtract = get_player_choice(player)
+#         #Substract input from remaining stones
+#         remaining_stones -= subtract
+#         #Switch player
+#         if player == 1:
+#             player += 1
+#         else:
+#             player -= 1
+#     print(f"Player {player} wins!")
         
-        
+def main():
+ 
  
 
 if __name__ == '__main__':
