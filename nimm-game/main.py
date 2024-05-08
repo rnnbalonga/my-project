@@ -24,17 +24,31 @@ def switch_player(player):
     
     return player
 
+def get_player_input():
+    """
+    This function will get the player input and check if it's valid.
+    """
+    while True:
+        player_choice = int('Would you like to remove 1 or 2 stones? ')
+        print("\n")
+        if player_choice == 1 or player_choice ==2:
+            return player_choice
+        else:
+            print(f'Please select between 1 or 2.')
+
 def main():
     """
     You should write your code here. 
     """
     #Create starting variables based on requirements
     remaining_stones = 20
-    player = 1
+    player = 2
     game_over = False 
 
     while not game_over:
-        print(f'There are {remaining_stones} stones left')
+        print(f'There are {remaining_stones} stones left.')
+        player = switch_player(player)
+        print(f'Turn: Player {player}')
         game_over = True
         
  
