@@ -18,39 +18,42 @@ def get_player_choice(player):
     This function will get the player's choice.
     """
     while True:
-        user_choice = input(f"Player {player} would you like to remove 1 or 2 stones? ")
-        #Check if user_choice is an int or not.
-        try:
-            user_choice = int(user_choice)
-            break
-        except ValueError:
-            print("Nope")
-    if user_choice == 1 or user_choice == 2:
-            print("\n")
-            return user_choice
-    #Issue is it will only ask user to enter 1 or 2 just once. If the player insists on entering some other int, it will proceed to use that input.
+        player_choice = input(f"Player {player} would you like to remove 1 or 2 stones? ")
+        #Check if player_choice is an int or not.
+        player_choice = is_int(player_choice)
+        break
+    if is_1_or_2(player_choice):
+            return player_choice
+    #Issue is it will only ask player to enter 1 or 2 just once. If the player insists on entering some other int, it will proceed to use that input.
     #Need to find a solution.
     else:
+        player_choice = ask_again()
+        return player_choice
+
+def is_int(choice):
+    """
+    Check if player's choice is an integer.
+    """
+    try:
+        choice = int(choice)
+    except ValueError:
         ask_again()
-        print("\n")
-        return user_choice
+    else:
+        return choice
+
+def is_1_or_2(choice):
+    """
+    Check if player's choice is 1 or 2.
+    """
+    if choice == 1 or choice == 2:
+        return True
 
 def ask_again():
-    """
-    This function will repeat asking for a valid input from the player
-    """
     while True:
-        user_choice = int(input("Please enter 1 or 2: "))
-        #Check if user_choice is an int or not.
-        try:
-            user_choice = int(user_choice)
-            break
-        except ValueError:
-            print("Nope")
-    while user_choice != 1 or user_choice != 2:
-        ask_again()
-    return user_choice
-
+        player_choice = (input("Please enter 1 or 2: "))
+        player_choice = is_int(player_choice)
+        if player_choice == 1 or player_choice == 2:
+            return player_choice
 
 def main():
     """
