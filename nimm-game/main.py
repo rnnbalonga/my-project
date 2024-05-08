@@ -13,6 +13,17 @@
 # Track if game has ended - game will end when remaining stones <= 0
 # 
 
+def switch_player(player):
+    """
+    This function will swap the player.
+    """
+    if player == 1:
+        player += 1
+    else:
+        player -= 1
+    
+    return player
+
 def main():
     """
     You should write your code here. 
