@@ -29,6 +29,14 @@ def make_process_dictionary(command_list):
 
     print(process_dictionary)
 
+def get_process_name(command):
+    process_regex_pattern = r'(?<=\.sh\s)(?P<process>.*?)(?=\s+s)'
+
+    process_name = re.search(process_regex_pattern, command)
+
+    return process_name
+
+
 def is_command_start(command):
     return 'start' if 'start' in command else 'stop'
 
@@ -40,12 +48,13 @@ def parse_command_time(command):
     match = re.search(timing_regex_pattern, command)
 
     if match:
+        minute = int(match.group("minute"))
+        hour = int(match.group("hour"))
         return {
-        command_type + '_minute': match.group("minute"),
-        command_type + '_hour': match.group("hour"),
-        command_type + '_day_of_month': match.group("day_of_month"),
-        command_type + '_month': match.group("month"),
-        command_type + '_day_of_week': match.group("day_of_week") 
+        f'{command_type}_time': datetime.time(hour,minute),
+        f'{command_type}_day_of_month': match.group("day_of_month"),
+        f'{command_type}_month': match.group("month"),
+        f'{command_type}_day_of_week': match.group("day_of_week") 
     }
 
 def set_stop_all_time(command_list):
