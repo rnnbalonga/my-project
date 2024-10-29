@@ -22,7 +22,11 @@ def make_process_dictionary(command_list):
             else:
                 process_dictionary[process].append(parse_command_time(command))
 
-    
+    for key, entries in process_dictionary.items():
+        has_stop = any('stopminute' in entry for entry in entries)
+        if not has_stop:
+            process_dictionary[key].append(set_stop_all_time(command_list))
+
     print(process_dictionary)
 
 def is_command_start(command):
@@ -37,11 +41,21 @@ def parse_command_time(command):
 
     if match:
         return {
-        command_type + 'minute': match.group("minute"),
-        command_type + 'hour': match.group("hour"),
-        command_type + 'day_of_month': match.group("day_of_month"),
-        command_type + 'month': match.group("month"),
-        command_type + 'day_of_week': match.group("day_of_week") 
+        command_type + '_minute': match.group("minute"),
+        command_type + '_hour': match.group("hour"),
+        command_type + '_day_of_month': match.group("day_of_month"),
+        command_type + '_month': match.group("month"),
+        command_type + '_day_of_week': match.group("day_of_week") 
     }
+
+def set_stop_all_time(command_list):
+    stop_all_regex = r'\bstopall\b'
+
+    for command in command_list:
+        stop_all = re.search(stop_all_regex, command)
+        if stop_all:
+            return parse_command_time(command)
+    
+    return None
 
 make_process_dictionary(cron)
