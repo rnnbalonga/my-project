@@ -20,7 +20,7 @@ timing_regex = r'^\s*(?P<minute>\S+)\s+(?P<hour>\S+)\s+(?P<day_of_month>\S+)\s+(
 ps_details = {
     'GUI-AO-01': 
     # Up to you if you want each command as a separate dictionary inside a list or if you want to combine all in one dictionary
-    # I prefer using a list since one dictionary for one command
+    # I prefer using a list so it will have one dictionary for one command
 
     [
         {
