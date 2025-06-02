@@ -1,25 +1,28 @@
-import requests
 import os
-from dotenv import load_dotenv
 import json
+import requests
+from dotenv import load_dotenv
 
 load_dotenv()
-APIKEY = os.getenv("API_KEY")
-URL = f"https://nanaroq.backlog.jp/api/v2/issues/"
+api_key = os.getenv("API_KEY")
+base_url = "https://nanaroq.backlog.jp/api/v2/issues"
 
 def get_count():
-    count = f"count?apiKey={APIKEY}"
-    finalUrl = URL + count
-    print(finalUrl)
-    r = requests.get(finalUrl)
-    response = r.content.decode('utf-8')
-    return json.loads(response).get('count')
+    url = f"{base_url}/count?apiKey={api_key}"
+    print(url)
+    response = requests.get(url).content.decode("utf-8")
+    return json.loads(response).get("count")
 
-def get_issue(issueIdOrKey):
-    get_issue_url = f"{URL}{issueIdOrKey}?apiKey={APIKEY}"
-    print(get_issue_url)
-    r = requests.get(get_issue_url)
-    return r.json()
+def get_issue(issue_id_or_key):
+    url = f"{base_url}/{issue_id_or_key}?apiKey={api_key}"
+    print(url)
+    return requests.get(url).json()
 
-info = get_issue("LABCI_OP-1")
-print(json.dumps(info, indent=2, ensure_ascii=False))
+def get_issue_list():
+    project_id = 178803
+    url = f"{base_url}?projectId[]={project_id}&apiKey={api_key}"
+    print(url)
+    response = requests.get(url).json()
+    return len(response)
+
+print(get_issue_list())
