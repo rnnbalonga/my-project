@@ -19,10 +19,22 @@ def get_issue(issue_id_or_key):
     return requests.get(url).json()
 
 def get_issue_list():
-    project_id = 178803
-    url = f"{base_url}?projectId[]={project_id}&apiKey={api_key}"
-    print(url)
-    response = requests.get(url).json()
-    return len(response)
+    params = {
+        "apiKey" : api_key,
+        "projectId[]": 178803,
+        "count": 100,
+        "offset" : 0
+    }
+    all_issues = []
+
+    while True:
+        response = requests.get(base_url, params=params)
+        issues = response.json()
+        if not issues:
+            break
+        all_issues.extend(issues)
+        params["offset"] += 100
+
+    return len(all_issues)
 
 print(get_issue_list())
